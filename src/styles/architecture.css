@@ -1,0 +1,255 @@
+.text__subhead {
+  line-height: 45px;
+  border: 1px solid red;
+  color: var(--Cod-Gray-950, #080808);
+  /* Text md Regular */
+  font-family: Kufam;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.text__under__section{
+  margin-bottom: 120px;
+}
+.main__con p {
+  line-height: 25px;
+  border: 1px solid red;
+  color: var(--Cod-Gray-950, #080808);
+  /* Text md Regular */
+  font-family: Kufam;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.list__icon__text {
+  display: flex;
+  align-items: center;
+}
+.design__below__image__text {
+  display: flex;
+  gap: 20px;
+}
+.design__inner__con {
+  display: flex;
+  gap: 70px;
+  margin-bottom: 120px ;
+}
+
+.design__right__con {
+  width: 100%;
+}
+.design__right__con h1 {
+  color: var(--pic-bg, #2e4a77);
+
+  font-family: Kufam;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
+.design__right__con p {
+  color: var(--Cod-Gray-950, #080808);
+
+  /* Text md Medium */
+  font-family: Kufam;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  margin-bottom: 30px;
+}
+.design__right__con {
+  width: 70%;
+}
+.design__left__con {
+  width: 70%;
+}
+.design__left__con img {
+  width: 100%;
+}
+.design__right__con img {
+  width: 100%;
+}
+.design__text h1 {
+  color: var(--Cod-Gray-950, #080808);
+
+  /* Text xl Semibold */
+  font-family: Kufam;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  margin-bottom: 10px;
+}
+.design__text p {
+  color: var(--Cod-Gray-950, #080808);
+
+  /* Text md Regular */
+  font-family: Kufam;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.design__below__image__text {
+  margin-top: 20px;
+}
+
+.design__two__innercon {
+  display: flex;
+  margin-bottom: 120px ;
+
+}
+
+.design__two__innercon__left {
+  width: 100%;
+}
+.design__two__innercon__left img {
+  width: 80%;
+  margin-top: 40px;
+}
+.design__two__innercon__right {
+  margin-top: 250px;
+}
+.design__two__innercon__right {
+  width: 100%;
+}
+.design__two__innercon__left h1 {
+  color: var(--pic-bg, #2e4a77);
+
+  /* Display lg Bold */
+  font-family: Kufam;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+  letter-spacing: -0.96px;
+  margin-bottom: 20px;
+}
+.design__two__innercon__left p {
+  color: var(--Cod-Gray-950, #080808);
+
+  font-family: Kufam;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.inside__image__text {
+  /* padding-top: 230px; */
+  background-color: var(--Picture--bg, #081c464d);
+  
+ padding: 10px 20px;
+  width: 100%;
+  text-transform: capitalize;
+}
+.inside__image__text h1{
+  font-size: 20px;
+}
+.app {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.image__con{
+ filter: saturate(0.1);
+}
+.image__con:hover{
+  filter: saturate(1);
+
+}
+
+.b__img {
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  background-position: top;
+
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  overflow: hidden;
+}
+.img {
+  width: 100%;
+}
+.modal__section__heading {
+  color: var(--pic-bg, #2e4a77);
+  text-align: center;
+
+  /* Display lg Bold */
+  font-family: Kufam;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+  letter-spacing: -0.96px;
+  padding: 60px 40px;
+}
+.image__con:hover{
+  background-color: var(--Picture--bg, #081c464d);
+  cursor: pointer;
+}
+.heading__con{
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 40px;
+  text-transform: capitalize;
+
+}
+.heading__btn{
+  text-transform: capitalize;
+}
+
+
+@media (max-width: 900px) {
+  .text__under {
+    width: 100%;
+  }
+  .design__inner__con {
+    flex-direction: column;
+  }
+  .design__right__con {
+    width: 100%;
+  }
+  .design__left__con {
+    width: 100%;
+  }
+  .design__two__innercon {
+    flex-direction: column;
+    
+  }
+  .design__two__innercon__left img {
+    width: 100%;
+    
+  }
+  .design__text h1 {
+    font-size: 26px;
+  }
+  .design__text p {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .design__right__con p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .design__two__innercon__left p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .design__two__innercon__right {
+    margin-top: 30px;
+  }
+
+}

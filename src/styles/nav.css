@@ -1,0 +1,160 @@
+.nav__container {
+  display: flex;
+  padding: 30px 70px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 0 auto;
+  font-family: "Kufam";
+  margin-bottom: 50px;
+}
+.nav__list {
+  display: flex;
+  gap: 40px;
+  font-family: "Kufam";
+  font-size: 15px;
+  font-weight: 500;
+}
+.home__nav img {
+  width: 60px;
+}
+.logo__con img {
+  width: 100%;
+}
+.link {
+  color: var(--Gulf-Blue-50, #e9f7ff);
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+  border: none;
+  z-index: 2000;
+  position: relative;
+  transition: 0.3s;
+}
+
+.home__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  cursor: pointer;
+  top: 0;
+  z-index: 10000;
+  font-family: "Kufam";
+}
+
+.home__nav a {
+  color: #fff;
+  z-index: 2000;
+}
+
+.home__nav ul li a:not(.active) {
+  opacity: 0.5;
+}
+.home__nav ul li {
+  position: relative;
+  z-index: 1000;
+}
+
+.nav_link {
+  color: #fff;
+  font-style:'Kufam';
+  font-size: 40px;
+  
+  color: #ffff;
+  font-weight: 300;
+}
+
+.home__nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  /* transition: 0.25s ease-in; */
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.home__nav button span {
+  height: 2px;
+  width: 30px;
+  display: block;
+  background-color: #fff;
+  z-index: 1000;
+  transform-origin: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* .hamburger {
+    height: 2px;
+    width: 30px;
+    display: block;
+    background-color: #fff;
+  
+  } */
+
+.open {
+  display: flex !important;
+
+  pointer-events: unset !important;
+  opacity: 1 !important;
+  font-size: 10px;
+font-family: 'kufam';
+
+}
+.home__nav button span:nth-child(1) {
+  margin-bottom: 5px;
+}
+
+.home__nav button span:nth-child(2) {
+  width: 30px;
+}
+
+.menu span:last-child {
+  transform: translateY(1px) rotate(-45deg);
+
+  width: 30px;
+}
+.menu span:first-child {
+  transform: translateY(8px) rotate(45deg);
+  width: 30px;
+}
+.dropdown {
+  display: flex;
+
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.colors {
+  display: inline-block;
+  background-color:#001A52;
+
+  flex: 1;
+  transition: 0.25s;
+
+  transform: translateY(-100%);
+}
+.open .colors {
+  transform: translateY(0%) !important;
+}
+.home__nav li {
+  opacity: 0;
+  transition: 0.15s;
+}
+.open li {
+  opacity: 1;
+  transition-delay: 0.1s;
+}
