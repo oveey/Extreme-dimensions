@@ -327,11 +327,10 @@
 .build__header {
   display: flex;
   align-items: center;
-
   justify-content: space-between;
-
   margin-bottom: 50px;
 }
+
 .build__header h1 {
   color: var(--pic-bg, #2e4a77);
   text-align: center;
@@ -567,6 +566,7 @@
   }
   .build__header {
     flex-direction: column;
+    gap: 20px;
   }
   .double__Image {
     width: 100%;

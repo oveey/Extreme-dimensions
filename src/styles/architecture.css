@@ -288,4 +288,34 @@
     font-size: 16px;
     line-height: 30px;
   }
+  .b__img {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+  
+    display: flex;
+    justify-content: center;
+    /* align-items:; */
+    color: white;
+    overflow: hidden;
+  }
+  .inside__image__text {
+    background-color: var(--Picture--bg, #081c464d);
+    padding: 10px 5px;
+    width: 100%;
+    text-transform: capitalize;
+  }
+  .inside__image__text h1 {
+    font-size: 10px;
+  }
+  .inside__image__text p{
+    font-size: 10px;
+  }
+  .app{
+    justify-content:center;
+  }
+  .heading__con{
+    gap: 15px;
+  }
 }

@@ -5,7 +5,12 @@
 .heading__con {
   margin-bottom: 20px;
   padding: 20px;
+  width: 100%;
+  top: 350px;
+  overflow-x: auto;
+
 }
+
 .heading__btn:active {
   color: #001a52 !important;
 }

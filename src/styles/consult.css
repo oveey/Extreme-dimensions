@@ -1,12 +1,10 @@
-:root {
-  --custom-padding: 60px 170px;
-}
+
 
 .consult__section {
   background-image: url("https://res.cloudinary.com/dw3vqhvte/image/upload/v1720842289/Frame_ancssh.png");
   background-position: top center;
   background-size: cover;
-  padding: 160px;
+  padding: 140px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,6 +30,17 @@
   font-weight: 500;
   line-height: 32px;
   color: #4f4f4f;
+  padding: 0 60px;
+}
+.consult__btn{
+  background-color:#001a52;
+  color: white;
+}
+.consult{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* .btn__link {
@@ -53,15 +62,14 @@ justify-content: center;
 } */
 
 
-/* 
+ 
 @media (max-width: 768px) {
-  .consult {
-    padding: 10px;
-  }
+
 
   .consult h1 {
     font-size: 38px;
-    line-height: 60px
+    line-height: 60px;
+    width:100%;
   }
 
   .consult h3 {
@@ -71,10 +79,7 @@ justify-content: center;
     color: #4f4f4f;
   }
 
-  .consult .btn {
-    padding: 10px 80px;
 
-  }
 
   
-} */ 
+} 

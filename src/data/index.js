@@ -42,7 +42,7 @@ const images = [
     category: "landscaping",
     key: "set73",
     urls: [
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625631/Portfolio4_m7ihjd.pngg",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625632/Portfolio11_g66x3q.png",
 
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
@@ -56,9 +56,9 @@ const images = [
     category: "arch",
     key: "set2",
     urls: [
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351324/Company_ip3ept.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625631/Portfolio4_m7ihjd.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
     ],
     mainT: "Beautiful Hotel",
     smallT: "lagos ,Nigeria",
@@ -67,9 +67,9 @@ const images = [
     category: "arch",
     key: "set92",
     urls: [
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625631/Portfolio4_m7ihjd.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351324/Company_ip3ept.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
     ],
     mainT: "Beautiful Hotel",
     smallT: "lagos ,Nigeria",
@@ -79,8 +79,8 @@ const images = [
     key: "set93",
     urls: [
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625631/Portfolio4_m7ihjd.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351324/Company_ip3ept.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
     ],
     mainT: "Beautiful Hotel",
     smallT: "lagos ,Nigeria",
@@ -89,9 +89,9 @@ const images = [
     category: "arch",
     key: "set94",
     urls: [
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351324/Company_ip3ept.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625631/Portfolio4_m7ihjd.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
     ],
     mainT: "Beautiful Hotel",
     smallT: "lagos ,Nigeria",
@@ -101,9 +101,9 @@ const images = [
     key: "set3",
     urls: [
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625631/Portfolio4_m7ihjd.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625631/Portfolio4_m7ihjd.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
     ],
     mainT: "b",
     smallT: "lagos ,Nigeria",
@@ -112,11 +112,9 @@ const images = [
     category: "engineer",
     key: "set53",
     urls: [
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625631/Portfolio4_m7ihjd.png",
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625631/Portfolio4_m7ihjd.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
     ],
     mainT: "b",
     smallT: "lagos ,Nigeria",
@@ -126,12 +124,9 @@ const images = [
     key: "set54",
     urls: [
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625631/Portfolio4_m7ihjd.png",
-
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625631/Portfolio4_m7ihjd.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
     ],
     mainT: "b",
     smallT: "lagos ,Nigeria",
@@ -140,12 +135,8 @@ const images = [
     category: "engineer",
     key: "set55",
     urls: [
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625631/Portfolio4_m7ihjd.png",
-
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625631/Portfolio4_m7ihjd.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
     ],
     mainT: "b",
     smallT: "lagos ,Nigeria",
@@ -155,9 +146,7 @@ const images = [
     key: "set4",
     urls: [
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625628/Portfolio15_ey798w.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
     ],
     mainT: "c",
     smallT: "lagos ,Nigeria",
@@ -166,11 +155,8 @@ const images = [
     category: "remodel",
     key: "set64",
     urls: [
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625628/Portfolio15_ey798w.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
     ],
     mainT: "c",
     smallT: "lagos ,Nigeria",
@@ -180,11 +166,8 @@ const images = [
     key: "set65",
     urls: [
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625628/Portfolio15_ey798w.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
 
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
     ],
     mainT: "c",
     smallT: "lagos ,Nigeria",
@@ -193,12 +176,11 @@ const images = [
     category: "remodel",
     key: "set66",
     urls: [
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625628/Portfolio15_ey798w.png",
 
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625628/Portfolio15_ey798w.png",
 
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625628/Portfolio15_ey798w.png",
     ],
     mainT: "c",
     smallT: "lagos ,Nigeria",
@@ -209,9 +191,8 @@ const images = [
     key: "set5",
     urls: [
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625629/Portfolio2_zu5dkb.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625628/Portfolio15_ey798w.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625628/Portfolio15_ey798w.png",
     ],
     mainT: "d",
     smallT: "lagos ,Nigeria",
@@ -220,11 +201,9 @@ const images = [
     category: "engineer",
     key: "set45",
     urls: [
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625628/Portfolio15_ey798w.png",
 
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625629/Portfolio2_zu5dkb.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
     ],
     mainT: "d",
     smallT: "lagos ,Nigeria",
@@ -234,11 +213,6 @@ const images = [
     key: "set46",
     urls: [
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625629/Portfolio2_zu5dkb.png",
-
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
     ],
     mainT: "d",
     smallT: "lagos ,Nigeria",
@@ -247,12 +221,8 @@ const images = [
     category: "engineer",
     key: "set47",
     urls: [
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625636/Portfolio5_gvw6rl.png",
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625629/Portfolio2_zu5dkb.png",
-
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
     ],
     mainT: "d",
     smallT: "lagos ,Nigeria",
@@ -262,9 +232,8 @@ const images = [
     key: "set6",
     urls: [
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625629/Portfolio17_gcsv92.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625636/Portfolio5_gvw6rl.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625629/Portfolio2_zu5dkb.png",
     ],
     mainT: "f",
     smallT: "lagos ,Nigeria",
@@ -273,11 +242,9 @@ const images = [
     category: "arch",
     key: "set66",
     urls: [
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
 
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625629/Portfolio17_gcsv92.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625629/Portfolio2_zu5dkb.png",
     ],
     mainT: "f",
     smallT: "lagos ,Nigeria",
@@ -287,11 +254,7 @@ const images = [
     key: "set67",
     urls: [
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625629/Portfolio17_gcsv92.png",
-
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625636/Portfolio5_gvw6rl.png",
     ],
     mainT: "f",
     smallT: "lagos ,Nigeria",
@@ -301,9 +264,6 @@ const images = [
     key: "set68",
     urls: [
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625629/Portfolio17_gcsv92.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
     ],
     mainT: "f",
     smallT: "lagos ,Nigeria",
@@ -313,8 +273,6 @@ const images = [
     key: "set7",
     urls: [
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625636/Portfolio5_gvw6rl.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
     ],
     mainT: "t",
     smallT: "lagos ,Nigeria",
@@ -323,10 +281,9 @@ const images = [
     category: "remodel",
     key: "set17",
     urls: [
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
 
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625636/Portfolio5_gvw6rl.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625636/Portfolio5_gvw6rl.png",
     ],
     mainT: "t",
     smallT: "lagos ,Nigeria",
@@ -336,8 +293,6 @@ const images = [
     key: "set18",
     urls: [
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625636/Portfolio5_gvw6rl.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
     ],
     mainT: "t",
     smallT: "lagos ,Nigeria",
@@ -346,10 +301,7 @@ const images = [
     category: "remodel",
     key: "set19",
     urls: [
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625636/Portfolio5_gvw6rl.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
     ],
     mainT: "t",
     smallT: "lagos ,Nigeria",
@@ -359,9 +311,7 @@ const images = [
     key: "set8",
     urls: [
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625635/Portfolio14_b2p3ld.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625636/Portfolio5_gvw6rl.png",
     ],
     mainT: "u",
     smallT: "lagos ,Nigeria",
@@ -370,11 +320,8 @@ const images = [
     category: "arch",
     key: "set58",
     urls: [
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625636/Portfolio5_gvw6rl.png",
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625635/Portfolio14_b2p3ld.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
     ],
     mainT: "u",
     smallT: "lagos ,Nigeria",
@@ -384,9 +331,7 @@ const images = [
     key: "set59",
     urls: [
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625635/Portfolio14_b2p3ld.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625636/Portfolio5_gvw6rl.png",
     ],
     mainT: "u",
     smallT: "lagos ,Nigeria",
@@ -395,11 +340,8 @@ const images = [
     category: "arch",
     key: "set60",
     urls: [
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625635/Portfolio14_b2p3ld.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625635/Portfolio14_b2p3ld.png",
     ],
     mainT: "u",
     smallT: "lagos ,Nigeria",
@@ -409,9 +351,7 @@ const images = [
     key: "set9",
     urls: [
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625634/Portfolio10_ocforq.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625635/Portfolio14_b2p3ld.png",
     ],
     mainT: "o",
     smallT: "lagos ,Nigeria",
@@ -420,11 +360,8 @@ const images = [
     category: "engineer",
     key: "set91",
     urls: [
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625634/Portfolio10_ocforq.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625635/Portfolio14_b2p3ld.png",
     ],
     mainT: "o",
     smallT: "lagos ,Nigeria",
@@ -434,9 +371,7 @@ const images = [
     key: "set93",
     urls: [
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625634/Portfolio10_ocforq.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625635/Portfolio14_b2p3ld.png",
     ],
     mainT: "o",
     smallT: "lagos ,Nigeria",
@@ -445,11 +380,8 @@ const images = [
     category: "engineer",
     key: "set94",
     urls: [
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-
       "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625634/Portfolio10_ocforq.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
-      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png",
+      "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625634/Portfolio10_ocforq.png",
     ],
     mainT: "o",
     smallT: "lagos ,Nigeria",
