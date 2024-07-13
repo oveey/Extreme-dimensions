@@ -153,7 +153,7 @@
 }
 .app {
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
   gap: 30px;
   width: 100%;
   flex-wrap: wrap;
@@ -222,6 +222,18 @@
   .design__left__con {
     width: 100%;
   }
+  .design__right__con p{
+    
+      
+      font-family: Kufam;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 38px;
+      
+    
+     
+  }
   .design__two__innercon {
     flex-direction: column;
     
@@ -230,26 +242,78 @@
     width: 100%;
     
   }
+ 
+  .design__two__innercon__right {
+    margin-top: 30px;
+  }
+  .design__right__con h1{
+    margin-top: 0px;
+    
+  }
+  .text__under__section{
+    margin-bottom: 0;
+  }
+  .service__text__con{
+    gap: 20px;
+  }
+  .design__text p{
+    font-family: Kufam;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+  }
+  .design__text h1{
+    font-size: 38px;
+  }
+
+}
+@media (max-width: 480px){
   .design__text h1 {
-    font-size: 26px;
+    font-size: 25px;
+    
   }
   .design__text p {
-    font-size: 22px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
   }
+  .design__right__con h1{
+    font-size: 24px;
+  }
 
   .design__right__con p {
-    font-size: 25px;
+    font-size: 18px;
     line-height: 30px;
   }
   .design__two__innercon__left p {
-    font-size: 25px;
+    font-size: 16px;
     line-height: 30px;
   }
-  .design__two__innercon__right {
-    margin-top: 30px;
+  .design__two__innercon__left h1{
+    font-size: 24px;
   }
+  .design__below__image__text{
+    margin-top: 32px;
+  }
+  .design__below__image__text h1{
+    font-size: 18px;
+  }
+  .modal__section__heading{
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .design__inner__con{
+    margin-bottom: 20px;
+  }
+  .design__two__innercon{
+    margin-bottom: 20px;
+  }
+  .design__right__con P{
+    font-size: 16px;
+    line-height: 30px;
+  }
+  
 
 }

@@ -117,6 +117,7 @@ export const Aboutus = () => {
           />
         </div>
         <div className="engineering__text__con  our__mission__text__con ">
+          <div className="our__mission__main__text">
           <p>
             {" "}
             <svg
@@ -141,7 +142,10 @@ export const Aboutus = () => {
             conceptualization to completion, we uphold the highest standards of
             craftsmanship and attention to detail.
           </p>
-          <p>
+          </div>
+        
+        <div className="our__mission__main__text">
+        <p>
             {" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -159,14 +163,16 @@ export const Aboutus = () => {
             </svg>
           </p>{" "}
           <h1>Our Mission</h1>
-          <p>
+          <p className="our__mission__main__text">
             To transform ordinary spaces into extraordinary environments that
             enrich lives and exceed expectations.
           </p>
         </div>
+       
+        </div>
       </section>
       <section className="engineering__section">
-        <div className="engineering__con">
+        <div className="engineering__con company__history__main__con">
           <div className="engineering__img company__history__img">
             <h1 className="img__header">Meet the team </h1>
             <img

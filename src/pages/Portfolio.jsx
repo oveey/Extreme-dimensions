@@ -6,6 +6,7 @@ import Carousel from "../component/Carousel";
 import { Footer } from "../component/Footer";
 import "../styles/architecture.css";
 import { images } from "../data";
+import '../styles/portfolio.css';
 
 export const Portfolio = () => {
   const [showModal, setShowModal] = useState(false);

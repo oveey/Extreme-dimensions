@@ -128,7 +128,7 @@ section {
   }
   .img__header {
     color: var(--Gulf-Blue-950, #001a52);
-    text-align: center;
+    /* text-align: center; */
 
     /* Display sm Bold */
     font-family: Kufam;
@@ -184,5 +184,16 @@ section {
   .our__mission__img img {
     width: 100%;
     /* height: 50%; */
+  }
+  .our__mission__text__con {
+    padding: 0 16px;
+    
+  }
+  .our__mission__main__text{
+    
+    margin-bottom: 60px;
+  }
+  .company__history__main__con{
+    margin-top: 0;
   }
 }

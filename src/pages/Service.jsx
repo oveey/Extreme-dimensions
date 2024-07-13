@@ -40,7 +40,7 @@ export const Service = () => {
               </p>
               <a href="/architectural" className="btn__link">
                 <div className="btn service__btn">
-                  <p>Learn more architectrual designs</p>
+                  <p>Learn more architecture</p>
                   <p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
