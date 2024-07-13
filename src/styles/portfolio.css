@@ -1,16 +1,11 @@
-.heading__btn{
-    font-size: 16px;
-    color: #888888;
-;
-
-
-
+.heading__btn {
+  font-size: 16px;
+  color: #888888;
 }
-.heading__con{
-    margin-bottom: 20px;
-    padding: 20px;
+.heading__con {
+  margin-bottom: 20px;
+  padding: 20px;
 }
-.heading__btn:active{
-    color:#001A52 !important;
-
+.heading__btn:active {
+  color: #001a52 !important;
 }

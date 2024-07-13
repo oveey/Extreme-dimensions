@@ -32,17 +32,17 @@ export const Contact = () => {
                   <input type="text" name="" id="" />
                 </div>
                 <div className="name__form">
-                  <label htmlFor="">last-name</label> <br />
+                  <label htmlFor="">Last-name</label> <br />
                   <input type="text" name="" id="" />
                 </div>
               </div>
               <div className="input__con">
                 <div className="name__form">
-                  <label htmlFor="">phone number</label> <br />
+                  <label htmlFor="">Phone number</label> <br />
                   <input type="text" name="" id="" />
                 </div>
                 <div className="name__form">
-                  <label htmlFor="">address</label> <br />
+                  <label htmlFor="">Address</label> <br />
                   <input type="text" name="" id="" />
                 </div>
               </div>
@@ -51,7 +51,16 @@ export const Contact = () => {
                 <textarea name="" id="" cols="300" rows="18"></textarea>
               </div>
               <button className="form__btn">
-                <p>send Message</p> <p>/</p>
+                <p>Send Message</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="20"
+                  height="20"
+                >
+                  <path d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" />
+                </svg>
               </button>
             </form>
           </div>

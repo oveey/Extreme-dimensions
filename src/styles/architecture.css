@@ -2,21 +2,19 @@
   line-height: 45px;
   border: 1px solid red;
   color: var(--Cod-Gray-950, #080808);
-  /* Text md Regular */
   font-family: Kufam;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
 }
-.text__under__section{
+.text__under__section {
   margin-bottom: 120px;
 }
 .main__con p {
   line-height: 25px;
   border: 1px solid red;
   color: var(--Cod-Gray-950, #080808);
-  /* Text md Regular */
   font-family: Kufam;
   font-size: 16px;
   font-style: normal;
@@ -34,7 +32,7 @@
 .design__inner__con {
   display: flex;
   gap: 70px;
-  margin-bottom: 120px ;
+  margin-bottom: 120px;
 }
 
 .design__right__con {
@@ -42,7 +40,6 @@
 }
 .design__right__con h1 {
   color: var(--pic-bg, #2e4a77);
-
   font-family: Kufam;
   font-size: 40px;
   font-style: normal;
@@ -54,8 +51,6 @@
 }
 .design__right__con p {
   color: var(--Cod-Gray-950, #080808);
-
-  /* Text md Medium */
   font-family: Kufam;
   font-size: 16px;
   font-style: normal;
@@ -77,8 +72,6 @@
 }
 .design__text h1 {
   color: var(--Cod-Gray-950, #080808);
-
-  /* Text xl Semibold */
   font-family: Kufam;
   font-size: 20px;
   font-style: normal;
@@ -88,8 +81,6 @@
 }
 .design__text p {
   color: var(--Cod-Gray-950, #080808);
-
-  /* Text md Regular */
   font-family: Kufam;
   font-size: 15px;
   font-style: normal;
@@ -102,8 +93,7 @@
 
 .design__two__innercon {
   display: flex;
-  margin-bottom: 120px ;
-
+  margin-bottom: 120px;
 }
 
 .design__two__innercon__left {
@@ -121,8 +111,6 @@
 }
 .design__two__innercon__left h1 {
   color: var(--pic-bg, #2e4a77);
-
-  /* Display lg Bold */
   font-family: Kufam;
   font-size: 48px;
   font-style: normal;
@@ -133,7 +121,6 @@
 }
 .design__two__innercon__left p {
   color: var(--Cod-Gray-950, #080808);
-
   font-family: Kufam;
   font-size: 16px;
   font-style: normal;
@@ -141,29 +128,26 @@
   line-height: 24px;
 }
 .inside__image__text {
-  /* padding-top: 230px; */
   background-color: var(--Picture--bg, #081c464d);
-  
- padding: 10px 20px;
+  padding: 10px 20px;
   width: 100%;
   text-transform: capitalize;
 }
-.inside__image__text h1{
+.inside__image__text h1 {
   font-size: 20px;
 }
 .app {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   gap: 30px;
   width: 100%;
   flex-wrap: wrap;
 }
-.image__con{
- filter: saturate(0.1);
+.image__con {
+  filter: saturate(0.1);
 }
-.image__con:hover{
+.image__con:hover {
   filter: saturate(1);
-
 }
 
 .b__img {
@@ -180,10 +164,12 @@
 .img {
   width: 100%;
 }
+.modal__section{
+  margin-bottom: 360px;
+}
 .modal__section__heading {
   color: var(--pic-bg, #2e4a77);
   text-align: center;
-
   /* Display lg Bold */
   font-family: Kufam;
   font-size: 48px;
@@ -193,21 +179,19 @@
   letter-spacing: -0.96px;
   padding: 60px 40px;
 }
-.image__con:hover{
+.image__con:hover {
   background-color: var(--Picture--bg, #081c464d);
   cursor: pointer;
 }
-.heading__con{
+.heading__con {
   display: flex;
   /* justify-content: space-between; */
   gap: 40px;
   text-transform: capitalize;
-
 }
-.heading__btn{
+.heading__btn {
   text-transform: capitalize;
 }
-
 
 @media (max-width: 900px) {
   .text__under {
@@ -222,56 +206,46 @@
   .design__left__con {
     width: 100%;
   }
-  .design__right__con p{
-    
-      
-      font-family: Kufam;
-      font-size: 28px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 38px;
-      
-    
-     
-  }
-  .design__two__innercon {
-    flex-direction: column;
-    
-  }
-  .design__two__innercon__left img {
-    width: 100%;
-    
-  }
- 
-  .design__two__innercon__right {
-    margin-top: 30px;
-  }
-  .design__right__con h1{
-    margin-top: 0px;
-    
-  }
-  .text__under__section{
-    margin-bottom: 0;
-  }
-  .service__text__con{
-    gap: 20px;
-  }
-  .design__text p{
+  .design__right__con p {
     font-family: Kufam;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 38px;
   }
-  .design__text h1{
-    font-size: 38px;
+  .design__two__innercon {
+    flex-direction: column;
+  }
+  .design__two__innercon__left img {
+    width: 100%;
   }
 
+  .design__two__innercon__right {
+    margin-top: 30px;
+  }
+  .design__right__con h1 {
+    margin-top: 0px;
+  }
+  .text__under__section {
+    margin-bottom: 0;
+  }
+  .service__text__con {
+    gap: 20px;
+  }
+  .design__text p {
+    font-family: Kufam;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+  }
+  .design__text h1 {
+    font-size: 38px;
+  }
 }
-@media (max-width: 480px){
+@media (max-width: 480px) {
   .design__text h1 {
     font-size: 25px;
-    
   }
   .design__text p {
     font-size: 16px;
@@ -279,7 +253,7 @@
     font-weight: 400;
     line-height: 30px;
   }
-  .design__right__con h1{
+  .design__right__con h1 {
     font-size: 24px;
   }
 
@@ -291,29 +265,27 @@
     font-size: 16px;
     line-height: 30px;
   }
-  .design__two__innercon__left h1{
+  .design__two__innercon__left h1 {
     font-size: 24px;
   }
-  .design__below__image__text{
+  .design__below__image__text {
     margin-top: 32px;
   }
-  .design__below__image__text h1{
+  .design__below__image__text h1 {
     font-size: 18px;
   }
-  .modal__section__heading{
+  .modal__section__heading {
     font-size: 24px;
     line-height: 32px;
   }
-  .design__inner__con{
+  .design__inner__con {
     margin-bottom: 20px;
   }
-  .design__two__innercon{
+  .design__two__innercon {
     margin-bottom: 20px;
   }
-  .design__right__con P{
+  .design__right__con P {
     font-size: 16px;
     line-height: 30px;
   }
-  
-
 }

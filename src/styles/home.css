@@ -46,8 +46,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 16px 10px; */
-  /* width: 100%; */
   padding:10px 20px ;
   gap: 10px;
   margin-top: 40px;
@@ -61,7 +59,7 @@
 }
 
 .header__mini__text {
-  width: 55%;
+  width: 64%;
   justify-content: space-around;
   transform: translateX(450px);
   font-size: 19px;
@@ -406,7 +404,6 @@
 @media (max-width: 768px) {
   .header__text {
     font-size: 40px;
-
     width: 100%;
   }
 
@@ -635,6 +632,7 @@
   .header__text {
     font-size: 38px;
     line-height: 53px; /* 165.625% */
+
 
   }
   .build__header h1 {

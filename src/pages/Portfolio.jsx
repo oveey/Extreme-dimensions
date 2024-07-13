@@ -7,6 +7,8 @@ import { Footer } from "../component/Footer";
 import "../styles/architecture.css";
 import { images } from "../data";
 import '../styles/portfolio.css';
+import { Consult } from "../component/ Consult";
+
 
 export const Portfolio = () => {
   const [showModal, setShowModal] = useState(false);
@@ -120,6 +122,7 @@ export const Portfolio = () => {
           </div>
         </div>
       </section>
+      <Consult/>
 
       <Footer />
     </>

@@ -1,0 +1,80 @@
+:root {
+  --custom-padding: 60px 170px;
+}
+
+.consult__section {
+  background-image: url("https://res.cloudinary.com/dw3vqhvte/image/upload/v1720842289/Frame_ancssh.png");
+  background-position: top center;
+  background-size: cover;
+  padding: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.consult {
+  max-width: 600px; /* Adjust the width as needed */
+  text-align: center;
+}
+.consult h1 {
+  font-family: Kufam;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #2e4a77;
+  margin-bottom: 30px;
+}
+
+.consult h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #4f4f4f;
+}
+
+/* .btn__link {
+display: flex;
+align-items: center;
+justify-content: center;
+
+} */
+
+/* .consult .btn {
+  background-color: #081c46; /* Adjust the color as needed */
+  /* color: white;
+  padding: 16px 22px;
+  font-size: 16px;
+  display: flex;  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 80px;
+} */
+
+
+/* 
+@media (max-width: 768px) {
+  .consult {
+    padding: 10px;
+  }
+
+  .consult h1 {
+    font-size: 38px;
+    line-height: 60px
+  }
+
+  .consult h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #4f4f4f;
+  }
+
+  .consult .btn {
+    padding: 10px 80px;
+
+  }
+
+  
+} */ 

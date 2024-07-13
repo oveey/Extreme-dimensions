@@ -2,6 +2,7 @@ import React from "react";
 import { Nav } from "../component/Nav";
 import "../styles/service.css";
 import { useState } from "react";
+import { Consult } from "../component/ Consult";
 import { Footer } from "../component/Footer";
 
 export const Service = () => {
@@ -341,6 +342,7 @@ export const Service = () => {
         </div>
       </section>
 
+      <Consult />
       <Footer />
     </>
   );

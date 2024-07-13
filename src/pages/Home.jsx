@@ -2,6 +2,7 @@ import React from "react";
 import { Nav } from "../component/Nav";
 import { Link } from "react-router-dom";
 import "../styles/home.css";
+import { Consult } from "../component/ Consult";
 import { Footer } from "../component/Footer";
 
 export const Home = () => {
@@ -19,7 +20,7 @@ export const Home = () => {
           <div className="header__mini__text">
             <div className="consultation__con">
               <p className="consultation__text">
-                we don’t just build structures; we craft experiences that
+                We don’t just build structures; we craft experiences that
                 resonate with beauty, functionality, and enduring quality.
               </p>
 
@@ -547,6 +548,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
+      <Consult />
       <Footer />
     </>
   );
