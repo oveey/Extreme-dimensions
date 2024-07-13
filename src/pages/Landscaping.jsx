@@ -7,40 +7,111 @@ import { Footer } from "../component/Footer";
 import "../styles/architecture.css";
 import { images } from "../data";
 
+
+
 export const Landscaping = () => {
   const [showModal, setShowModal] = useState(false);
   const [activeImages, setActiveImages] = useState([]);
-  const [tabImages, setTabImages] = useState(images);
 
-  // useEffect(() => {
-  //   setTabImages(images)
+  const images = [
+    {
+      key: "set1",
+      urls: [
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625634/Portfolio13_sfye5n.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625632/Portfolio11_g66x3q.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625631/Portfolio4_m7ihjd.pngg",
+      ],
+      mainT: "Luxurious Hotel",
+      smallT: "lagos Nigeria",
+    },
+    {
+      key: "set2",
+      urls: [
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625632/Portfolio11_g66x3q.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625629/Portfolio3_gk7p33.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625631/Portfolio4_m7ihjd.png",
+      ],
+      mainT: "Beautiful Hotel",
+      smallT: "lagos ,Nigeria",
+    },
+    {
+      key: "set3",
+      urls: [
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625631/Portfolio4_m7ihjd.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625628/Portfolio15_ey798w.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625634/Portfolio9_weodxk.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625631/Portfolio4_m7ihjd.png",
+      ],
+      mainT: "Beautiful Hotel",
+      smallT: "lagos ,Nigeria",
+    },
+    {
+      key: "set4",
+      urls: [
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625628/Portfolio15_ey798w.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625634/Portfolio9_weodxk.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
+      ],
+      mainT: "Beautiful Hotel",
+      smallT: "lagos ,Nigeria",
+    },
+    {
+      key: "set5",
+      urls: [
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625629/Portfolio2_zu5dkb.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625628/Portfolio15_ey798w.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625634/Portfolio9_weodxk.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
+      ],
+      mainT: "Beautiful Hotel",
+      smallT: "lagos ,Nigeria",
+    },
+    {
+      key: "set6",
+      urls: [
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625629/Portfolio17_gcsv92.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625628/Portfolio15_ey798w.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625634/Portfolio9_weodxk.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
+      ],
+      mainT: "Beautiful Hotel",
+      smallT: "lagos ,Nigeria",
+    },
+    {
+      key: "set7",
+      urls: [
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625636/Portfolio5_gvw6rl.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625628/Portfolio15_ey798w.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625634/Portfolio9_weodxk.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625633/Portfolio12_nzpy9p.png",
+      ],
+      mainT: "Beautiful Hotel",
+      smallT: "lagos ,Nigeria",
+    },
+    {
+      key: "set8",
+      urls: [
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625635/Portfolio14_b2p3ld.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625628/Portfolio15_ey798w.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625634/Portfolio9_weodxk.png",
+      ],
+      mainT: "Beautiful Hotel",
+      smallT: "lagos ,Nigeria",
+    },
+    {
+      key: "set9",
+      urls: [
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625634/Portfolio10_ocforq.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625628/Portfolio15_ey798w.png",
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1720625634/Portfolio9_weodxk.png",
+      ],
+      mainT: "Beautiful Hotel",
+      smallT: "lagos ,Nigeria",
+    },
 
-  //   return () => {
-  //     second
-  //   }
-  // }, [third])
+  ];
 
-  const handleClick = (tabName) => {
-    if (tabName === "all") {
-      setTabImages(images);
-    } else if (tabName === "arch") {
-      setTabImages(images.filter((archImage) => archImage.category === "arch"));
-    } else if (tabName === "landscaping") {
-      setTabImages(
-        images.filter((landImage) => landImage.category === "landscaping")
-      );
-    } else if (tabName === "engineer") {
-      setTabImages(
-        images.filter((engImage) => engImage.category === "engineer")
-      );
-    } else if (tabName === "remodel") {
-      setTabImages(
-        images.filter((remoImage) => remoImage.category === "remodel")
-      );
-    }
-  };
-
-  console.log(images);
 
   const openModal = (urls) => {
     setActiveImages(urls);
@@ -200,40 +271,19 @@ export const Landscaping = () => {
           </div>
         </div>
       </section>
+      
       <section className="modal__section">
         <h1 className="modal__section__heading">
-          See Our Completed Project On Landscaping
+          See Our Completed Project On Landscaping Construction
         </h1>
-        <div className="heading__con">
-          <button className="heading__btn" onClick={() => handleClick("all")}>
-            all
-          </button>
-          <button
-            className="heading__btn"
-            onClick={() => handleClick("landscaping")}
-          >
-            landscaping
-          </button>
-          <button
-            className="heading__btn"
-            onClick={() => handleClick("remodel")}
-          >
-            Remodeling
-          </button>
-          <button
-            className="heading__btn"
-            onClick={() => handleClick("engineer")}
-          >
-            engineer
-          </button>
-          <button className="heading__btn" onClick={() => handleClick("arch")}>
-            architectural
-          </button>
-        </div>
         <div className="carousel__modal">
           <div className="app">
-            {tabImages?.map((imageSet) => (
-              <div key={imageSet.key} onClick={() => openModal(imageSet.urls)}>
+            {images.map((imageSet) => (
+              <div
+                key={imageSet.key}
+                onClick={() => openModal(imageSet.urls)}
+                className="image__con"
+              >
                 {/* <img src={imageSet.urls[0]} alt="" /> */}
                 <div
                   style={{ backgroundImage: `url(${imageSet.urls[0]})` }}

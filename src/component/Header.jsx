@@ -8,7 +8,6 @@ export const Header = () => {
         <ul className='nav__list'>
             <li className="nav__links"><Link to="/" className='link'>About us</Link></li>
             <li className="nav__links"><Link to="/" className='link'>Service</Link></li>
-            
             <li className="nav__links"><Link to="/" className='link'>Portfolio</Link></li>
             <li className="nav__links"><Link to="/" className='link'>Contact us</Link></li>
         </ul>

@@ -110,7 +110,7 @@ export const Home = () => {
                 with beauty, functionality, and enduring quality.
               </p>
 
-              <a href="" className="btn__link learn">
+              <a href="service" className="btn__link learn">
                 <div className="btn who_link">
                   <p>Learn more about us</p>
                   <p>
@@ -234,7 +234,7 @@ export const Home = () => {
                   <p>3D Rendering</p>
                 </div>
               </div>
-              <a href="" className="btn__link learn">
+              <a href="Architectural" className="btn__link learn">
                 <div className="btn who_link">
                   <p>Learn more </p>
                   <p>
@@ -311,7 +311,7 @@ export const Home = () => {
                 <p>Construction</p>
               </div>
             </div>
-            <a href="" className="btn__link learn">
+            <a href="Engineering" className="btn__link learn">
               <div className="btn who_link">
                 <p>Learn more </p>
                 <p>
@@ -387,7 +387,7 @@ export const Home = () => {
                 <p>Plant Selection</p>
               </div>
             </div>
-            <a href="" className="btn__link learn">
+            <a href="Landscaping" className="btn__link learn">
               <div className="btn who_link">
                 <p>Learn more </p>
                 <p>
