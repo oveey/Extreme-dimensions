@@ -6,8 +6,6 @@
 }
 .contact__header__text__con p {
   color: var(--Cod-Gray-50, #f6f6f6);
-
-  /* Text lg Medium */
   font-family: Kufam;
   font-size: 18px;
   font-style: normal;
@@ -30,9 +28,18 @@
 .name__form {
   width: 100%;
 }
+.form-section{
+  margin-bottom: 200px;
+}
+
 .form__container {
   display: flex;
-  gap: 130px;
+  justify-content: space-between;
+  gap: 200px;
+
+}
+form{
+  width: 100%;
 }
 
 form input {
@@ -44,9 +51,8 @@ form input {
   border-radius: 10px;
   padding: 10px;
 }
-.form__main {
-  width: 50%;
-}
+
+
 .social__info {
   margin: 20px 0;
 }
@@ -61,10 +67,6 @@ form input {
   border-radius: 10px;
   padding: 10px;
 }
-.form-section{
-  margin-bottom: 200px;
-
-}
 
 .form__btn {
   display: flex;
@@ -74,21 +76,25 @@ form input {
   border-radius: 30px;
   gap: 20px;
   text-transform: capitalize;
-  margin-top: 50px;
   justify-content: center;
   font-size: 16px;
+  margin-top: 20px;
 }
+
 .social__info__con{
-  width: 50%;
+  max-width: 800px;
+  width: 100%;
+
 }
+
 
 .social__info__con img {
   width: 100%;
-  height: 50%;
+  height: auto;
 }
 .social__info {
   display: flex;
-  gap: 20px;
+  gap: 5px;
   align-items: center;
 }
 
@@ -96,30 +102,33 @@ form input {
   .form__container {
     flex-direction: column;
   }
-  .form__main {
+  /* .form__main {
     width: 100%;
-  }
-  .form__btn {
-    display: flex;
-    background: #001a52;
-    padding: 20px 40px;
-    color: white;
-    border-radius: 30px;
-    gap: 10px;
-    text-transform: capitalize;
-    margin-top: 50px;
-    justify-content: center;
-    font-size: 16px;
-  }
+  } */
+ 
   .social__info {
     margin-bottom: 20px;
-
     width: 100%;
   }
   .contact__header__text__con {
     width: 70%;
   }
+ 
+
+  .form__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+  
+  }
+  .social__info__con{
+    width: 100%;
+    max-width: 600px;
+  }
+ 
+  
 }
+
 @media (max-width: 480px) {
   .contact__header__text__con {
     width: 100%;
