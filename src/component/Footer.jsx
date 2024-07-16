@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <>
-      <section
-      className="footer__section">
+      <section className="footer__section">
         <div className="footer">
           <div className="footer__content">
             <div className="footer__logo">
@@ -15,10 +14,13 @@ export const Footer = () => {
                 alt=""
               />
               <p className="logo__text">
-                Schedule a free consultation with us now.
+                We design and construct innovative buildings.
               </p>
             </div>
             <ul className="footer__links">
+              <li>
+                <Link to="/">Home</Link>
+              </li>
               <li>
                 <Link to="/about-us">About Us</Link>
               </li>
@@ -29,7 +31,7 @@ export const Footer = () => {
                 <Link to="/portfolio">Portfolio</Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact">Contact Us</Link>
               </li>
             </ul>
             <div className="footer__social">
@@ -54,7 +56,7 @@ export const Footer = () => {
                 />
               </a>
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/xtremedimension/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -69,7 +71,7 @@ export const Footer = () => {
         <div className="footer__section2">
           <div className="footer__two">
             <p>
-              &copy; {new Date().getFullYear()} Your Company Name. All rights
+              &copy; {new Date().getFullYear()} Extremedimension. All rights
               reserved.
             </p>
             <ul className="footer__links2">
