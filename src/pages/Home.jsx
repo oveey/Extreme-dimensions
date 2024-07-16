@@ -66,7 +66,7 @@ export const Home = () => {
                 />
               </a>
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/xtremedimension/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -161,7 +161,7 @@ export const Home = () => {
               </p>
               <div className="service__image">
                 <img
-                  src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278166/picture_2_z64tle.png"
+                  src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278168/picture_3_ykcxht.png"
                   alt=""
                 />
               </div>
@@ -259,7 +259,7 @@ export const Home = () => {
         <div className="engineering__con">
           <div className="engineering__img">
             <img
-              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278168/picture_3_ykcxht.png"
+              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278172/picture_5_x9qxor.png"
               alt=""
             />
           </div>
@@ -506,7 +506,7 @@ export const Home = () => {
         <div className="build__inner__con">
           <div className="build__header">
             <h1>WHAT WE BUILD</h1>
-            <a href="">
+            <a href="/portfolio">
               <div className="btn">
                 <p>View our portfolio</p>
                 <p>
