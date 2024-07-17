@@ -10,6 +10,7 @@ import { Engineering } from './pages/Engineering';
 import { Remodelling } from './pages/Remodelling';
 import { Landscaping } from './pages/Landscaping';
 import { Contact } from './pages/Contact';
+import Form from './component/form';
 
 
 const App = () => {
@@ -26,6 +27,9 @@ const App = () => {
           <Route path='/remodeling' element={<Remodelling/>}/>
           <Route path='/landscaping' element={<Landscaping/>}/>
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/form' element={<Form/>}/>
+
+
 
         </Routes>
       </Router>

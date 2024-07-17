@@ -60,9 +60,9 @@ button {
 
 .nav_link {
   color: #fff;
-  font-style:'Kufam';
+  font-style: "Kufam";
   font-size: 40px;
-  
+
   color: #ffff;
   font-weight: 300;
 }
@@ -110,8 +110,7 @@ button {
   pointer-events: unset !important;
   opacity: 1 !important;
   font-size: 10px;
-font-family: 'kufam';
-
+  font-family: "kufam";
 }
 .home__nav button span:nth-child(1) {
   margin-bottom: 5px;
@@ -140,7 +139,7 @@ font-family: 'kufam';
 }
 .colors {
   display: inline-block;
-  background-color:#001A52;
+  background-color: #001a52;
 
   flex: 1;
   transition: 0.25s;

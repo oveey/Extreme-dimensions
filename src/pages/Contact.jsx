@@ -101,7 +101,11 @@ export const Contact = () => {
                   clip-rule="evenodd"
                 />
               </svg>
-              <p>No. 3 Dan Bassey Strt. Uyo.</p>
+              <div className="Social__title">
+              <h4>Address</h4>
+              <p> Address No. 3 Dan Bassey Strt. Uyo.</p>
+              </div>
+             
             </div>
             <div className="social__info">
               <svg
@@ -117,7 +121,10 @@ export const Contact = () => {
                   clip-rule="evenodd"
                 />
               </svg>
+              <div className="Socail__title">
+              <h4>Phone</h4>
               <p>08033555805</p>
+              </div>
             </div>
             <div className="social__info">
               <p>
@@ -133,7 +140,11 @@ export const Contact = () => {
                 </svg>
               </p>
 
+              <div className="Social__title">
+              <h4>Gmail</h4>
               <p>Xtremedimensions16@gmail.com</p>
+              </div>
+
             </div>
             {/* <div className="social__info">
               <p>

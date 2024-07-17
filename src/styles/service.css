@@ -9,8 +9,6 @@
 
 .service__text__con h1 {
   color: var(--pic-bg, #2e4a77);
-
-  /* Display lg Bold */
   font-family: Kufam;
   font-size: 48px;
   font-style: normal;
@@ -28,8 +26,6 @@
 }
 .service__text__tb p {
   color: var(--pic-bg, #2e4a77);
-
-  /* Text xl Medium */
   font-family: Kufam;
   font-size: 18px;
   font-style: normal;
@@ -67,8 +63,6 @@
 }
 .content p {
   color: var(--Cod-Gray-600, #5d5d5d);
-
-  /* Text md Medium */
   font-family: Kufam;
   font-size: 14px;
   font-style: normal;
@@ -78,7 +72,13 @@
 
 @media (max-width: 728px) {
   .service__box__con {
-    flex-direction: column;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+
+  }
+  .service__box__con > * {
+    flex: 0 0 auto; /* Prevent child elements from shrinking or growing */
+    max-width: 300px; /* Example width for child elements */
   }
   .service__text__con {
     flex-direction: column;
@@ -95,4 +95,7 @@
   .service__text__tb {
     width: 100%;
   }
+  
+
+  
 }

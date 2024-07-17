@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Nav } from "../component/Nav";
-import { Footer } from "../component/Footer";
+import { Link } from "react-router-dom";
 import "../styles/architecture.css";
 import Modal from "../component/Modal";
 import Carousel from "../component/Carousel";
+import { Footer } from "../component/Footer";
 
 export const Engineering = () => {
   const [showModal, setShowModal] = useState(false);
@@ -121,40 +122,124 @@ export const Engineering = () => {
       <section className="about__header__section">
         <div className="about__inner__con">
           <Nav />
-          <h1 className="about__header__text"> Engineering</h1>
+          <h1 className="about__header__text">Engineering Construction</h1>
         </div>
       </section>
       <section className="text__under__section">
         <div className="text__under__con">
           <p className="text__under">
-            Our engineering services is aimed at ensuring seamless construction
-            processes and project success. With a focus on technical expertise,
-            innovation, and client collaboration, we deliver reliable
-            engineering solutions that meet the highest industry standards
+          Our engineering services is aimed at ensuring seamless construction processes and project success. With a focus on technical expertise, innovation, and client collaboration, we deliver reliable engineering solutions that meet the highest industry standards.
           </p>
         </div>
       </section>
 
-      <section className="design-section">
-        <div className="design__inner__con">
-          <div className="design__right__con">
-            <h1>Commercial Renovations</h1>
+      <section className="design__two">
+        <div className="design__two__innercon">
+          <div className="design__two__innercon__left">
+            <h1><span>01</span> Site Mapping and Drafting</h1>
             <p>
-              We specialize in revitalizing commercial spaces to optimize
-              functionality, efficiency, and appeal, creating environments that
-              support business objectives and enhance customer experiences.
-              Services include
+            Our site mapping and drafting services lay the foundation for precise project execution and planning. Key features include
             </p>
             <img
               src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png"
               alt=""
             />
           </div>
-          <div className="design__left__con">
+          <div className="design__two__innercon__right">
+            <div className="design__below__image__text">
+              <p>
+                {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="40"
+                  height="40"
+                >
+                  <circle cx="12" cy="12" r="9.75" fill="#E7E7E7" />
+                  <path
+                    fill="#000000"
+                    fill-rule="evenodd"
+                    d="M15.61 10.186a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </p>{" "}
+              <div className="design__text">
+                <h1>Topographic Surveys </h1>
+                <p>
+                Conducting detailed surveys to map terrain and assess site conditions, facilitating accurate project planning and design.
+                </p>
+              </div>
+            </div>
+            <div className="design__below__image__text">
+              <p>
+                {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="40"
+                  height="40"
+                >
+                  <circle cx="12" cy="12" r="9.75" fill="#E7E7E7" />
+                  <path
+                    fill="#000000"
+                    fill-rule="evenodd"
+                    d="M15.61 10.186a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </p>{" "}
+              <div className="design__text">
+                <h1>Drafting Services</h1>
+                <p>
+                Providing detailed architectural and engineering drawings that serve as blueprints for construction, ensuring clarity and precision in project execution.
+                </p>
+              </div>
+            </div>
+            <div className="design__below__image__text">
+              <p>
+                {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="40"
+                  height="40"
+                >
+                  <circle cx="12" cy="12" r="9.75" fill="#E7E7E7" />
+                  <path
+                    fill="#000000"
+                    fill-rule="evenodd"
+                    d="M15.61 10.186a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </p>{" "}
+              <div className="design__text">
+                <h1>Space Planning</h1>
+                <p>
+                Optimization of layouts to maximize spatial efficiency and usability, ensuring every area serves its purpose effectively.
+                </p>
+              </div>
+
+              
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section className="design__two">
+        <div className="design__two__innercon">
+          <div className="design__two__innercon__left">
+            <h1><span>02</span> Construction Management</h1>
+            <p>
+            We specialize in expert construction management services that optimize project efficiency and ensure quality outcomes. Our services include
+            </p>
             <img
               src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png"
               alt=""
             />
+          </div>
+          <div className="design__two__innercon__right">
             <div className="design__below__image__text">
               <p>
                 {" "}
@@ -174,11 +259,9 @@ export const Engineering = () => {
                 </svg>
               </p>{" "}
               <div className="design__text">
-                <h1>Office Interiors</h1>
+                <h1>Project Planning and Scheduling</h1>
                 <p>
-                  Designing and renovating office interiors to foster
-                  productivity, collaboration, and employee well-being through
-                  strategic space planning and modern design concepts
+                Developing comprehensive project plans and schedules that outline milestones, timelines, and resource allocation, ensuring projects stay on track and within budget.
                 </p>
               </div>
             </div>
@@ -201,11 +284,9 @@ export const Engineering = () => {
                 </svg>
               </p>{" "}
               <div className="design__text">
-                <h1>Retail Spaces</h1>
+                <h1>Contract Administration</h1>
                 <p>
-                  Transforming retail environments with innovative layouts,
-                  attractive displays, and customer-centric designs to enhance
-                  brand identity and customer engagement
+                Managing contracts and subcontractors to ensure compliance with project specifications and regulatory requirements, fostering a collaborative and streamlined construction process.
                 </p>
               </div>
             </div>
@@ -228,11 +309,9 @@ export const Engineering = () => {
                 </svg>
               </p>{" "}
               <div className="design__text">
-                <h1>Hospitality Upgrades</h1>
+                <h1>Quality Control and Assurance</h1>
                 <p>
-                  Renovating hospitality venues such as hotels, restaurants, and
-                  resorts to create inviting atmospheres that elevate guest
-                  experiences and drive business success
+                Implementing rigorous quality control measures to monitor construction progress, mitigate risks, and maintain the highest standards of craftsmanship and safety.
                 </p>
               </div>
             </div>
@@ -240,25 +319,19 @@ export const Engineering = () => {
         </div>
       </section>
 
-      <section className="design-section">
-        <div className="design__inner__con">
-          <div className="design__right__con">
-            <h1>Institutional Facilities</h1>
+      <section className="design__two">
+        <div className="design__two__innercon">
+          <div className="design__two__innercon__left">
+            <h1><span>03</span> Structural Engineering</h1>
             <p>
-              Our expertise extends to crafting captivating exteriors that
-              enhance the architectural character and sustainability of
-              buildings and landscapes. Key services include:
+            Our structural engineering expertise encompasses the design and analysis of building structures to ensure structural integrity and safety. Services include
             </p>
             <img
               src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png"
               alt=""
             />
           </div>
-          <div className="design__left__con">
-            <img
-              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png"
-              alt=""
-            />
+          <div className="design__two__innercon__right">
             <div className="design__below__image__text">
               <p>
                 {" "}
@@ -278,11 +351,9 @@ export const Engineering = () => {
                 </svg>
               </p>{" "}
               <div className="design__text">
-                <h1>Educational Spaces</h1>
+                <h1>Structural Analysis</h1>
                 <p>
-                  Upgrading classrooms, libraries, and administrative areas with
-                  modern amenities and technology integration to support
-                  learning and growth.
+                Conducting detailed structural analysis using advanced methodologies to assess load-bearing capacities and optimize structural design.
                 </p>
               </div>
             </div>
@@ -305,11 +376,9 @@ export const Engineering = () => {
                 </svg>
               </p>{" "}
               <div className="design__text">
-                <h1>Healthcare Environments</h1>
+                <h1>Foundation Design</h1>
                 <p>
-                  Enhancing healthcare facilities with patient-friendly designs,
-                  efficient workflows, and infection control measures to promote
-                  healing and well-being
+                Designing robust and stable foundations tailored to site-specific conditions and project requirements, ensuring long-term structural stability and durability.
                 </p>
               </div>
             </div>
@@ -332,122 +401,24 @@ export const Engineering = () => {
                 </svg>
               </p>{" "}
               <div className="design__text">
-                <h1>Community Spaces</h1>
+                <h1>Design Validation</h1>
                 <p>
-                  Renovating community centers, religious buildings, and public
-                  spaces to serve the needs of diverse communities and enhance
-                  social connectivity.
+                  Ensuring design accuracy and feasibility through detailed 3D
+                  models, facilitating informed decision-making and project
+                  planning.reating interior spaces that reflect style and
+                  purpose
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="design-section">
-        <div className="design__inner__con">
-          <div className="design__right__con">
-            <h1>Residential Remodeling</h1>
-            <p>
-              Our expertise extends to crafting captivating exteriors that
-              enhance the architectural character and sustainability of
-              buildings and landscapes. Key services include:
-            </p>
-            <img
-              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png"
-              alt=""
-            />
-          </div>
-          <div className="design__left__con">
-            <img
-              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png"
-              alt=""
-            />
-            <div className="design__below__image__text">
-              <p>
-                {" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="40"
-                  height="40"
-                >
-                  <circle cx="12" cy="12" r="9.75" fill="#E7E7E7" />
-                  <path
-                    fill="#000000"
-                    fill-rule="evenodd"
-                    d="M15.61 10.186a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </p>{" "}
-              <div className="design__text">
-                <h1>Kitchen and Bathroom Renovations</h1>
-                <p>
-                  Transforming kitchens and bathrooms with modern amenities,
-                  stylish fixtures, and efficient layouts to optimize
-                  functionality and aesthetics.
-                </p>
-              </div>
-            </div>
-            <div className="design__below__image__text">
-              <p>
-                {" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="40"
-                  height="40"
-                >
-                  <circle cx="12" cy="12" r="9.75" fill="#E7E7E7" />
-                  <path
-                    fill="#000000"
-                    fill-rule="evenodd"
-                    d="M15.61 10.186a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </p>
-              <div className="design__text">
-                <h1>Interior Upgrades</h1>
-                <p>
-                  Upgrading interior spaces with new flooring, lighting,
-                  cabinetry, and finishes to enhance comfort and visual appeal
-                </p>
-              </div>
-            </div>
-            <div className="design__below__image__text">
-              <p>
-                {" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="40"
-                  height="40"
-                >
-                  <circle cx="12" cy="12" r="9.75" fill="#E7E7E7" />
-                  <path
-                    fill="#000000"
-                    fill-rule="evenodd"
-                    d="M15.61 10.186a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </p>
-              <div className="design__text">
-                <h1>Home Additions</h1>
-                <p>
-                  Designing and constructing new additions to expand living
-                  areas and accommodate growing family needs while seamlessly
-                  integrating with existing structures
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
+  
+
       <section className="modal__section">
         <h1 className="modal__section__heading">
-          See Our Completed Project On Engineering Designs
+          See Our Completed Project On Engineering Construction
         </h1>
         <div className="carousel__modal">
           <div className="app">
