@@ -24,9 +24,14 @@ export const Aboutus = () => {
           </p>
         </div>
       </section>
-      <div className="video__section ">
-        <div className="video__con about__v__section">
-          <div className="inner__video__con"></div>
+      <div className="video__section">
+        <div className="video__con">
+          <div className="inner__video__con">
+            <video controls width="100%">
+              <source src="your-video-link.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
       </div>
       <section className="engineering__con">

@@ -14,3 +14,10 @@
 .heading__btn:active {
   color: #001a52 !important;
 }
+.heading__btn{
+  border: none;
+  background-color: inherit;
+}
+
+
+

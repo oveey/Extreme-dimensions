@@ -63,7 +63,7 @@ export const Service = () => {
           <div className="service__box__con">
             <div className="service__box__content">
               <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721170809/Interior_o8vf8u.png"
                 alt=""
               />
               <div className="content">
@@ -77,7 +77,7 @@ export const Service = () => {
             </div>
             <div className="service__box__content">
               <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721170820/Exterior_amqqlc.png"
                 alt=""
               />
               <div className="content">
@@ -91,7 +91,7 @@ export const Service = () => {
             </div>
             <div className="service__box__content">
               <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721170840/3d_rendering_rgmqxl.png"
                 alt=""
               />
               <div className="content">
@@ -120,7 +120,7 @@ export const Service = () => {
               </p>
               <a href="/engineering" className="btn__link">
                 <div className="btn service__btn">
-                  <p>Learn more on engineering </p> 
+                  <p>Learn more on engineering </p>
                   <p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +134,8 @@ export const Service = () => {
                         clip-rule="evenodd"
                       />
                     </svg>
-                  </p>                </div>
+                  </p>{" "}
+                </div>
               </a>
             </div>
           </div>
@@ -212,7 +213,8 @@ export const Service = () => {
                         clip-rule="evenodd"
                       />
                     </svg>
-                  </p>                </div>
+                  </p>{" "}
+                </div>
               </a>
             </div>
           </div>
@@ -291,7 +293,8 @@ export const Service = () => {
                         clip-rule="evenodd"
                       />
                     </svg>
-                  </p>                </div>
+                  </p>{" "}
+                </div>
               </a>
             </div>
           </div>
