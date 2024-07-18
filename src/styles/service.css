@@ -78,7 +78,7 @@
   }
   .service__box__con > * {
     flex: 0 0 auto; 
-    max-width: 350px; 
+    max-width: 320px; 
   }  
   .service__text__con {
     flex-direction: column;
