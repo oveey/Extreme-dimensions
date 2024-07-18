@@ -72,14 +72,14 @@
 
 @media (max-width: 728px) {
   .service__box__con {
-    overflow-x: auto; /* Enable horizontal scrolling */
-    scroll-behavior: smooth; /* Smooth scrolling */
+    overflow-x: auto; 
+    scroll-behavior: smooth; 
 
   }
   .service__box__con > * {
-    flex: 0 0 auto; /* Prevent child elements from shrinking or growing */
-    max-width: 300px; /* Example width for child elements */
-  }
+    flex: 0 0 auto; 
+    max-width: 350px; 
+  }  
   .service__text__con {
     flex-direction: column;
   }

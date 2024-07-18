@@ -28,27 +28,27 @@ export const Contact = () => {
             <form action="">
               <div className="input__con">
                 <div className="name__form">
-                  <label htmlFor="">First-name</label> <br />
-                  <input type="text" name="" id="" />
+                  <label htmlFor="fname">First-name</label> <br />
+                  <input type="text" name="" id="fname" />
                 </div>
                 <div className="name__form">
-                  <label htmlFor="">Last-name</label> <br />
-                  <input type="text" name="" id="" />
+                  <label htmlFor="lname">Last-name</label> <br />
+                  <input type="text" name="" id="lname" />
                 </div>
               </div>
               <div className="input__con">
                 <div className="name__form">
-                  <label htmlFor="">Phone number</label> <br />
-                  <input type="text" name="" id="" />
+                  <label htmlFor="num">Phone number</label> <br />
+                  <input type="number" name="" id="num" />
                 </div>
                 <div className="name__form">
-                  <label htmlFor="">Address</label> <br />
-                  <input type="text" name="" id="" />
+                  <label htmlFor="add">Address</label> <br />
+                  <input type="address" name="" id="add" />
                 </div>
               </div>
               <div className="text__area__con">
-                <label htmlFor="">Message</label> <br />
-                <textarea name="" id="" cols="300" rows="18"></textarea>
+                <label htmlFor="message">Message</label> <br />
+                <textarea name="" id="message" cols="300" rows="18"></textarea>
               </div>
               <button className="form__btn">
                 <p>Send Message</p>
