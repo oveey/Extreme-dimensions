@@ -9,7 +9,11 @@ export const Contact = () => {
       <section className="about__header__section">
         <div className="about__inner__con">
           <Nav />
-          <div className="contact__header__text__con">
+          <div
+            className="contact__header__text__con"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <h1 className="about__header__text  contact__header">
               Contact us Today for your next project
             </h1>
@@ -23,7 +27,11 @@ export const Contact = () => {
       </section>
 
       <section className="form-section">
-        <div className="form__container">
+        <div
+          className="form__container"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <div className="form__main">
             <form action="">
               <div className="input__con">
@@ -65,7 +73,6 @@ export const Contact = () => {
             </form>
           </div>
           <div className="social__info__con">
-           
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.422084537781!2d7.930685574603667!3d5.03510003866872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105d57be8c2100ed%3A0xf591310c584c7b3c!2sPaul%20Bassey%20St%2C%20Uyo%20520103%2C%20Akwa%20Ibom!5e0!3m2!1sen!2sng!4v1721089920342!5m2!1sen!2sng"
               max-width="600"
@@ -102,10 +109,9 @@ export const Contact = () => {
                 />
               </svg>
               <div className="Social__title">
-              <h4>Address</h4>
-              <p> Address No. 3 Dan Bassey Strt. Uyo.</p>
+                <h4>Address</h4>
+                <p> Address No. 3 Dan Bassey Strt. Uyo.</p>
               </div>
-             
             </div>
             <div className="social__info">
               <svg
@@ -121,9 +127,9 @@ export const Contact = () => {
                   clip-rule="evenodd"
                 />
               </svg>
-              <div className="Socail__title">
-              <h4>Phone</h4>
-              <p>08033555805</p>
+              <div className="Social__title">
+                <h4>Phone</h4>
+                <p>08033555805</p>
               </div>
             </div>
             <div className="social__info">
@@ -141,10 +147,9 @@ export const Contact = () => {
               </p>
 
               <div className="Social__title">
-              <h4>Gmail</h4>
-              <p>Xtremedimensions16@gmail.com</p>
+                <h4>Gmail</h4>
+                <p>Xtremedimensions16@gmail.com</p>
               </div>
-
             </div>
             {/* <div className="social__info">
               <p>

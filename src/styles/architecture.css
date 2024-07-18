@@ -127,7 +127,7 @@ h1 span {
 .design__two__innercon__left p {
   color: var(--Cod-Gray-950, #080808);
   font-family: Kufam;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 35px;
@@ -160,7 +160,6 @@ h1 span {
   height: 350px;
   background-size: cover;
   background-position: top;
-
   display: flex;
   align-items: flex-end;
   color: white;

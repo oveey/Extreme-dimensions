@@ -93,9 +93,11 @@ export const Nav = () => {
                     <li>
                         <NavLink to="/service" className='nav_link'>Service</NavLink>
                     </li>
+                    
                     <li>
                         <NavLink to="/portfolio" className='nav_link'>Portfolio</NavLink>
                     </li>
+                  
                     <li>
                         <NavLink to="/contact" className='nav_link'>Contact us</NavLink>
                     </li>

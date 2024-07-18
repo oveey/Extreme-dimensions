@@ -6,7 +6,7 @@ export const Consult = () => {
   return (
     <>
       <section className="consult__section">
-        <div className="consult">
+        <div className="consult"data-aos="zoom-in-up">
           <h1>Ready to work with us now ? </h1>
           <h3>Schedule a free consultation with us now</h3>
           <a href="">

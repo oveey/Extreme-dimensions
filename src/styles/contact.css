@@ -38,11 +38,11 @@
   gap: 100px;
 
 }
-form{
+.form__container form{
   width: 100%;
 }
 
-form input {
+.form__container form input {
   background-color: #e7e7e7;
   border: none;
   outline: none;
@@ -55,6 +55,14 @@ form input {
 
 .social__info {
   margin: 20px 0;
+}
+.Social__title h4{
+  color: #081C46;
+  
+}
+.Social__title p{
+  color: #404041;
+  
 }
 .text__area__con {
   width: 100%;

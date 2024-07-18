@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Nav } from "../component/Nav";
 import { Link } from "react-router-dom";
 import "../styles/architecture.css";
 import Modal from "../component/Modal";
 import Carousel from "../component/Carousel";
 import { Footer } from "../component/Footer";
+import { Typewriter } from "react-simple-typewriter";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const Architectural = () => {
   const [showModal, setShowModal] = useState(false);
@@ -117,22 +120,44 @@ export const Architectural = () => {
     setShowModal(false);
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, // Duration of the animation in milliseconds
+      once: false, // Whether animation should happen only once - while scrolling down
+      startEvent: "DOMContentLoaded", // Trigger animations when the DOM is fully loaded
+      offset: 120, // Adjust this value as needed
+    });
+  }, []);
+
   return (
     <>
       <section className="about__header__section">
         <div className="about__inner__con">
           <Nav />
-          <h1 className="about__header__text">Architectural Designs</h1>
+          <h1 className="about__header__text" data-aos="fade-up">Architectural Designs</h1>
         </div>
       </section>
       <section className="text__under__section">
         <div className="text__under__con">
-          <p className="text__under">
+          {/* <p className="text__under" data-aos="fade-up"data-aos-anchor-placement="bottom-bottom">
             We specialize in crafting bespoke architectural designs that
             seamlessly blend creativity, functionality, and aesthetic appeal.
             With a deep understanding of architectural principles and a
             commitment to excellence, we transform spaces into exceptional
             environments that inspire and endure.
+          </p> */}
+          <p className="text__under">
+            <Typewriter
+              words={[
+                "We specialize in crafting bespoke architectural designs that seamlessly blend creativity, functionality, and aesthetic appeal. With a deep understanding of architectural principles and a commitment to excellence, we transform spaces into exceptional environments that inspire and endure.",
+              ]}
+              loop={false}
+              cursor
+              cursorStyle="_"
+              typeSpeed={20}
+              deleteSpeed={10}
+              delaySpeed={1000}
+            />
           </p>
         </div>
       </section>
@@ -243,7 +268,7 @@ export const Architectural = () => {
 
       <section className="design__two">
         <div className="design__two__innercon">
-          <div className="design__two__innercon__left">
+          <div className="design__two__innercon__left" data-aos="fade-up">
             <h1><span>01</span> Interior Designs</h1>
             <p>
             Our interior design services are tailored to create personalized and functional interiors that elevate living or working spaces. Whether designing residential homes, commercial offices, or institutional settings, we focus on:
@@ -253,7 +278,7 @@ export const Architectural = () => {
               alt=""
             />
           </div>
-          <div className="design__two__innercon__right">
+          <div className="design__two__innercon__right" data-aos="fade-up">
             <div className="design__below__image__text">
               <p>
                 {" "}
@@ -337,7 +362,7 @@ export const Architectural = () => {
       </section>
       <section className="design__two">
         <div className="design__two__innercon">
-          <div className="design__two__innercon__left">
+          <div className="design__two__innercon__left" data-aos="fade-up">
             <h1><span>02</span> Exterior Designs</h1>
             <p>
               Our expertise extends to crafting captivating exteriors that
@@ -349,7 +374,7 @@ export const Architectural = () => {
               alt=""
             />
           </div>
-          <div className="design__two__innercon__right">
+          <div className="design__two__innercon__right" data-aos="fade-up">
             <div className="design__below__image__text">
               <p>
                 {" "}
@@ -437,7 +462,7 @@ export const Architectural = () => {
 
       <section className="design__two">
         <div className="design__two__innercon">
-          <div className="design__two__innercon__left">
+          <div className="design__two__innercon__left" data-aos="fade-up">
             <h1><span>03</span> 3D Rendering</h1>
             <p>
               We leverage advanced 3D rendering technology to provide realistic
@@ -449,7 +474,7 @@ export const Architectural = () => {
               alt=""
             />
           </div>
-          <div className="design__two__innercon__right">
+          <div className="design__two__innercon__right" data-aos="fade-up">
             <div className="design__below__image__text">
               <p>
                 {" "}

@@ -2,12 +2,17 @@ import React from "react";
 import "../styles/footer.css";
 import { Link } from "react-router-dom";
 
+
 export const Footer = () => {
   return (
     <>
       <section className="footer__section">
         <div className="footer">
-          <div className="footer__content">
+          <div
+            className="footer__content"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div className="footer__logo">
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720281552/logo_hblomh.png"
@@ -26,6 +31,9 @@ export const Footer = () => {
               </li>
               <li>
                 <Link to="/service">Service</Link>
+              </li>
+              <li>
+                <Link to="/contact">Gallery</Link>
               </li>
               <li>
                 <Link to="/portfolio">Portfolio</Link>
@@ -69,7 +77,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="footer__section2">
-          <div className="footer__two">
+          <div className="footer__two" >
             <p>
               &copy; {new Date().getFullYear()} Extremedimension. All rights
               reserved.

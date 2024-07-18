@@ -1,13 +1,17 @@
-import React, { useEffect,  useState} from "react";
+import React, { useEffect, useState } from "react";
 import { Nav } from "../component/Nav";
 import { Link } from "react-router-dom";
 import "../styles/home.css";
 import { Consult } from "../component/ Consult";
 import { Footer } from "../component/Footer";
+import { Typewriter } from "react-simple-typewriter";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import CountUp from "react-countup";
 
 export const Home = () => {
+  const [CounterOn, setCounterOn] = useState(false); // Initialize state
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -33,8 +37,10 @@ export const Home = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 100, // Duration of the animation in milliseconds
-      once: true, // Whether animation should happen only once - while scrolling down
+      duration: 2000, // Duration of the animation in milliseconds
+      once: false, // Whether animation should happen only once - while scrolling down
+      startEvent: "DOMContentLoaded", // Trigger animations when the DOM is fully loaded
+      offset: 120, // Adjust this value as needed
     });
   }, []);
 
@@ -44,13 +50,27 @@ export const Home = () => {
         <div className="header__inner__con">
           <Nav />
           <div className="header__text__con">
-            <h1 className="header__text" data-aos="fade-right">
-              Redefining Luxury Living <span>Through Architectural </span>
-              Brilliance
+            <h1 className="header__text">
+              <Typewriter
+                words={[
+                  "Redefining Luxury Living Through Architectural Brilliance",
+                ]}
+                loop={false}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
             </h1>
           </div>
+
           <div className="header__mini__text">
-            <div className="consultation__con">
+            <div
+              className="consultation__con"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
               <p className="consultation__text">
                 We don’t just build structures; we craft experiences that
                 resonate with beauty, functionality, and enduring quality.
@@ -124,7 +144,7 @@ export const Home = () => {
       <section className="who__section">
         <div className="who__inner__con">
           <div className="who__more__info">
-            <div className="who_left_con">
+            <div className="who_left_con" data-aos="fade-up">
               <h1 className="who__head__text">Who We Are</h1>
               <div className="img__con">
                 <img
@@ -134,7 +154,11 @@ export const Home = () => {
               </div>
             </div>
 
-            <div className="who__text__con">
+            <div
+              className="who__text__con"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
               <p className="who__info__text">
                 Xtreme Dimensions is a leading architectural firm based in
                 Nigeria, specializing in creating exceptional spaces that blend
@@ -173,15 +197,21 @@ export const Home = () => {
       <section className="projects__section">
         <div className="projects__con">
           <div className="project__info">
-            <h1 className="project__big_t">1995</h1>
-            <p>YEAR OF ESTABLISHMENT </p>
+            <h1 className="project__big_t">
+              <CountUp start={0} end={1995} duration={5} />
+            </h1>
+            <p>YEAR OF ESTABLISHMENT</p>
           </div>
           <div className="project__info">
-            <h1 className="project__big_t">190+</h1>
+            <h1 className="project__big_t">
+              <CountUp start={0} end={5000} duration={5} />
+            </h1>
             <p>PROJECTS & COUNTING</p>
           </div>
           <div className="project__info final">
-            <h1 className="project__big_t">31</h1>
+            <h1 className="project__big_t">
+              <CountUp start={0} end={30} duration={5} />
+            </h1>
             <p>YEARS OF EXPERIENCE</p>
           </div>
         </div>
@@ -190,13 +220,13 @@ export const Home = () => {
         <div className="our__service__con">
           <h1 className="our__service__heading">Our Services</h1>
           <div className="engineering__con landscaping">
-            <div className="engineering__img">
+            <div className="engineering__img" data-aos="fade-up">
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278172/picture_5_x9qxor.png"
                 alt=""
               />
             </div>
-            <div className="engineering__text__con">
+            <div className="engineering__text__con" data-aos="fade-up">
               <h1>Architectural Designs</h1>
               <p>
                 We design spaces that blend functionality with aesthetics,
@@ -390,13 +420,13 @@ export const Home = () => {
           </div>
         </div>
         <div className="engineering__con">
-          <div className="engineering__img">
+          <div className="engineering__img" data-aos="fade-up">
             <img
               src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278172/picture_5_x9qxor.png"
               alt=""
             />
           </div>
-          <div className="engineering__text__con">
+          <div className="engineering__text__con" data-aos="fade-up">
             <h1>Engineering</h1>
             <p>
               We provide reliable engineering solutions for seamless
@@ -466,13 +496,13 @@ export const Home = () => {
           </div>
         </div>
         <div className="engineering__con landscaping">
-          <div className="engineering__img">
+          <div className="engineering__img" data-aos="fade-up">
             <img
               src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278172/picture_5_x9qxor.png"
               alt=""
             />
           </div>
-          <div className="engineering__text__con">
+          <div className="engineering__text__con" data-aos="fade-up">
             <h1>Landscaping</h1>
             <p>
               Our expertise extends to outdoor spaces, enhancing environments
@@ -542,13 +572,13 @@ export const Home = () => {
           </div>
         </div>
         <div className="engineering__con ">
-          <div className="engineering__img">
+          <div className="engineering__img" data-aos="fade-up">
             <img
               src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278166/picture_4_drvlfg.png"
               alt=""
             />
           </div>
-          <div className="engineering__text__con">
+          <div className="engineering__text__con" data-aos="fade-up">
             <h1>Remodeling and Renovations</h1>
             <p>We transform existing spaces into modern, functional areas.</p>
             <div className="list__con">
@@ -637,7 +667,7 @@ export const Home = () => {
       </section>
       <section className="build__section">
         <div className="build__inner__con">
-          <div className="build__header">
+          <div className="build__header" data-aos="fade-down">
             <h1>WHAT WE BUILD</h1>
             <a href="/portfolio">
               <div className="btn">
@@ -662,13 +692,18 @@ export const Home = () => {
             </a>
           </div>
           <div className="build__image__con">
-            <div className="big__image">
+            <div
+              className="big__image"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+            >
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278173/picture_6_eyx5tg.png"
                 alt=""
               />
             </div>
-            <div className="double__Image">
+
+            <div className="double__Image" data-aos="fade-up">
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278172/picture_8_ysqijx.png"
                 alt=""
@@ -687,35 +722,77 @@ export const Home = () => {
       {showPopup && (
         <div className="popup__overlay">
           <div className="popup">
-            <button onClick={closePopup} className="close__btn">
-              &times;
-            </button>
-            <h2>Book a Free Consultation</h2>
-            <form onSubmit={handleSubmit} className="consultation__form">
-              <input
-                type="text"
-                placeholder="Your Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-              <textarea
-                placeholder="Message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                required
-              ></textarea>
-              <button type="submit" className="btn">
-                <p>Submit</p>
-              </button>
-            </form>
+            <div className="popup__form__con">
+              <div className="popup__header">
+                <h2>Book a Free Consultation</h2>
+                <button onClick={closePopup} className="close__btn">
+                  &times;
+                </button>
+              </div>
+
+              <form onSubmit={handleSubmit} className="consultation__form">
+                <div className="Popup__main">
+                  <div className="pop__input__con">
+                    <div className="name__form">
+                      <label htmlFor="fname">First-name</label> <br />
+                      <input type="text" name="" id="fname" />
+                    </div>
+                    <div className="name__form">
+                      <label htmlFor="lname">Last-name</label> <br />
+                      <input type="text" name="" id="lname" />
+                    </div>
+                  </div>
+                  <div className="pop__input__con">
+                    <div className="name__form">
+                      <label htmlFor="num">Phone number</label> <br />
+                      <input type="number" name="" id="num" />
+                    </div>
+                    <div className="name__form">
+                      <label htmlFor="add">Address</label> <br />
+                      <input type="address" name="" id="add" />
+                    </div>
+                  </div>
+                  <div className="pop__input__con">
+                    <div className="name__form">
+                      <label htmlFor="num">Date and time</label> <br />
+                      <input type="number" name="" id="num" />
+                    </div>
+                    <div className="name__form">
+                      <label htmlFor="add">Type of consultation</label> <br />
+                      <input type="address" name="" id="add" />
+                    </div>
+                  </div>
+                  <div className="pop__input__con__single">
+                    <label htmlFor="">Optional</label>
+                    <br />
+                    <input type="text" />
+                  </div>
+                </div>
+                <div className="pop__message__con">
+                  <div className="pop__text__area__con">
+                    <label htmlFor="message">Message</label> <br />
+                    <textarea
+                      name=""
+                      id="message"
+                      cols="10"
+                      rows="20"
+                    ></textarea>
+                  </div>
+                  <button className="form__btn pop_btn">
+                    <p>Send Message</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      width="20"
+                      height="20"
+                    >
+                      <path d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       )}

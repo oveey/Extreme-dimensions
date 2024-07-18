@@ -2,22 +2,18 @@
   --custom-padding: 20px 30px;
 }
 
-.fade-in {
+/* .fade-in {
   opacity: 1;
-  transition: opacity 5s ease-in; /* Adjust the duration to 2 seconds */
-  transition-delay: 0.5s; /* Add a delay of 0.5 seconds before the animation starts */
-}
-
-
-
+  transition: opacity 5s ease-in; 
+  transition-delay: 0.5s; 
+}  */
 
 .header__section {
   background-image: url("https://res.cloudinary.com/dw3vqhvte/image/upload/v1721174728/Background_frlypc.jpg");
-  background-position: top center;
+  background-position: center;
   background-size: cover;
   /* padding: 5px 5px; */
   font-family: "Kufam";
-
   padding-bottom: 150px;
   margin-top: 0;
 }
@@ -33,15 +29,14 @@
   font-weight: 700;
   letter-spacing: -1.44px;
 }
-.btn__link{
-  
+.header__text__con {
+  height: 250px; /* Adjust the height based on your design */
+}
+.btn__link {
   /* width: 70%;  */
   display: flex;
   align-items: center;
-
 }
-
-
 
 .btn {
   color: var(--Gulf-Blue-950, #001a52);
@@ -54,18 +49,14 @@
   display: flex;
   align-items: center;
   /* justify-content: center; */
-  padding:10px 20px ;
+  padding: 10px 20px;
   gap: 10px;
   margin-top: 40px;
   cursor: pointer;
-  
- 
-
 }
 /* .btn:hover {
   background-color: #e5e9eb;
 } */
-
 
 .header__text span {
   color: #d9d9d9;
@@ -78,12 +69,10 @@
   font-size: 19px;
   line-height: 30px;
   display: flex;
-  
 }
 
 .consultation__con {
   padding: 10px 20px;
- 
 }
 
 .consultation__text {
@@ -92,12 +81,19 @@
 
 .socials__icons {
   color: #fff;
-  
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   justify-content: center;
-align-items: center;  
+  align-items: center;
 }
+
+.socials__icons a :hover {
+  background-color: #011baf7b;
+  border-radius: 100px;
+  transition: 0.3s ease, 
+  
+}
+
 
 .video__con {
   width: 90%;
@@ -114,7 +110,6 @@ video {
   width: 100%;
   border-radius: 15px 15px;
   background-color: #080808;
-
 }
 
 .who__head__text {
@@ -171,8 +166,7 @@ video {
 
 .learn {
   margin-top: 40px;
-  
-}  
+}
 
 .who_link {
   color: var(--Gulf-Blue-950, #001a52);
@@ -183,9 +177,7 @@ video {
   line-height: 28px;
   padding: 0;
   margin-top: 0;
-  
 }
-
 
 .projects__section {
   padding: 20px 0;
@@ -329,7 +321,6 @@ video {
 
 .engineering__text__con h1 {
   color: var(--pic-bg, #2e4a77);
-
   font-family: Kufam;
   font-size: 48px;
   font-style: normal;
@@ -388,9 +379,11 @@ video {
 .big__image {
   width: 50%;
 }
+
 .big__image img {
   width: 100%;
 }
+
 .double__Image {
   display: flex;
   flex-direction: column;
@@ -398,10 +391,12 @@ video {
   gap: 10px;
   margin-bottom: 50px;
 }
+
 .double__Image img {
   width: 100%;
 }
-.who_link p{
+
+.who_link p {
   color: var(--Gulf-Blue-950, #001a52);
   font-size: 18px;
   font-style: normal;
@@ -409,14 +404,100 @@ video {
   line-height: 28px;
   padding: 0;
   margin-top: 10px;
+}
 
-} 
-.header__mini__text button{
+.header__mini__text button {
   border: none;
   background-color: inherit;
 }
 
+.popup__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
 
+.pop__input__con {
+  display: flex;
+  gap: 10px;
+}
+
+.pop__input__con input {
+  background-color: #e7e7e7;
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.pop__message__con {
+  width: 50%;
+}
+
+.pop__message__con textarea {
+  width: 100%;
+  background-color: #e7e7e7;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.consultation__form {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.pop__input__con__single input {
+  background-color: #e7e7e7;
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.pop_btn {
+  width: 100%;
+}
+
+.popup__form__con {
+  background-color: white;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.popup__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  align-items: center;
+}
+
+.close__btn {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-size: 40px;
+}
 
 @media (max-width: 999px) {
   .header__mini__text {
@@ -434,6 +515,18 @@ video {
     border-bottom: 1px solid var(--pic-bg, #2e4a77);
     width: 100%;
   }
+  .consultation__form {
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+  }
+
+  /* .pop__message__con{
+    width: 100%;
+  }
+   */
 }
 
 @media (max-width: 768px) {
@@ -443,6 +536,9 @@ video {
   }
   video {
     height: 35vh;
+  }
+  .header__text__con {
+    height: 200px; /* Adjust the height based on your design */
   }
 
   /* .video__con {
@@ -463,15 +559,47 @@ video {
     gap: 20px;
     width: 50%;
   }
-  .consultation__con {
+
+  /* .consultation__con {
     padding: 30px 0;
+  } */
+  .consultation__form {
+    width: 100px;
+    padding: 20px;
+
+  }
+
+
+  .pop__input__con {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+
+
+  .pop__message__con {
+    width: 100%;
+
+  }
+
+
+  .consultation__form {
+    display: flex;
+    width: 400px;
+  }
+
+
+
+  .popup__header {
+    padding: 10px 30px;
   }
 
   .header__text {
     font-size: 40px;
     letter-spacing: 0.64px;
-    padding: 0px 10px;
-  } 
+    /* padding: 0px 10px; */
+  }
   .btn {
     font-size: 15px;
     /* padding: 16px 22px; */
@@ -639,13 +767,14 @@ video {
     margin: 0 auto;
     transform: translateY(-100px);
   }
+
   .nav_link {
     color: #fff;
     font-style: "Kufam";
     font-size: 30px;
-
     font-weight: 300;
   }
+
   .home__nav ul {
     display: flex;
     justify-content: center;
@@ -657,7 +786,7 @@ video {
     pointer-events: none;
     position: fixed;
   }
-  .service__image{
+  .service__image {
     margin-bottom: 20px;
   }
 }
@@ -666,8 +795,6 @@ video {
   .header__text {
     font-size: 38px;
     line-height: 53px; /* 165.625% */
-
-
   }
   .build__header h1 {
     color: var(--pic-bg, #2e4a77);
@@ -680,17 +807,14 @@ video {
     letter-spacing: -0.96px;
   }
 
-
- 
   .btn {
     display: flex;
     /* gap: 30px; */
     margin-top: 50px;
     /* justify-content: flex-start; */
-    
   }
- 
-  .who_link{
+
+  .who_link {
     margin-top: 0;
   }
 
