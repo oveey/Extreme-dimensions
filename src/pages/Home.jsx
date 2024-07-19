@@ -38,7 +38,7 @@ export const Home = () => {
   useEffect(() => {
     AOS.init({
       duration: 2000, // Duration of the animation in milliseconds
-      once: false, // Whether animation should happen only once - while scrolling down
+      once: true, // Whether animation should happen only once - while scrolling down
       startEvent: "DOMContentLoaded", // Trigger animations when the DOM is fully loaded
       offset: 120, // Adjust this value as needed
     });
@@ -171,7 +171,7 @@ export const Home = () => {
                 with beauty, functionality, and enduring quality.
               </p>
 
-              <a href="service" className="btn__link learn">
+              <a href="/about-us" className="btn__link learn">
                 <div className="btn who_link">
                   <p>Learn more about us</p>
                   <p>
@@ -643,7 +643,7 @@ export const Home = () => {
                 <p>Residential Remodeling</p>
               </div>
             </div>
-            <a href="" className="btn__link learn">
+            <a href="/remodeling" className="btn__link learn">
               <div className="btn who_link">
                 <p>Learn more </p>
                 <p>

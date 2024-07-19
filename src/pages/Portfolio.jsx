@@ -15,14 +15,6 @@ export const Portfolio = () => {
   const [activeImages, setActiveImages] = useState([]);
   const [tabImages, setTabImages] = useState(images);
 
-  // useEffect(() => {
-  //   setTabImages(images)
-
-  //   return () => {
-  //     second
-  //   }
-  // }, [third])
-
   const handleClick = (tabName) => {
     if (tabName === "all") {
       setTabImages(images);
@@ -66,12 +58,6 @@ export const Portfolio = () => {
       </section>
       <section className="text__under__section">
         <div className="text__under__con">
-          {/* <p className="text__under" data-aos="zoom-in-up">
-            From luxurious residential villas to cutting-edge commercial
-            complexes, each project reflects our passion for design excellence
-            and our dedication to surpassing client expectations. Explore our
-            portfolio to see how we have transformed visions into reality.
-          </p> */}
           <p className="text__under">
             <Typewriter
               words={[

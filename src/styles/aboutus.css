@@ -9,13 +9,12 @@ section {
 }
 
 .about__inner__con {
-  background: url("https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351309/About_Us_qb6znx.png");
+  background: url("https://res.cloudinary.com/dw3vqhvte/image/upload/v1721356279/Contact_Us_1_t3bssh.png");
   background-size: cover;
   background-position: top center;
   /* background-attachment: fixed; */
   background-repeat: no-repeat;
   padding: var(--custom-padding);
-
   padding-bottom: 0;
 }
 .about__header__text {

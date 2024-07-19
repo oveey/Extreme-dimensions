@@ -17,12 +17,7 @@ export const Service = () => {
       </section>
       <section className="text__under__section">
         <div className="text__under__con">
-          {/* <p className="text__under" data-aos="zoom-in-up">
-            We offer a comprehensive range of architectural and design services
-            tailored to meet the diverse needs of our clients. Our integrated
-            approach combines creativity, technical expertise, and client
-            collaboration to deliver innovative and sustainable solutions.
-          </p> */}
+       
           <p className="text__under">
             <Typewriter
               words={[
