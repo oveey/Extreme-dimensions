@@ -18,4 +18,9 @@ code {
   text-decoration: none;
   list-style: none;
   font-family: "Kufam";
+
+}
+
+html {
+  scroll-behavior: smooth;
 }

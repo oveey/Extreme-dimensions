@@ -61,9 +61,9 @@ export const Portfolio = () => {
           <p className="text__under">
             <Typewriter
               words={[
-                "From luxurious residential villas to cutting-edge commercial complexes, each project reflects our passion for design excellence and our dedication to surpassing client expectations.Explore our portfolio to see how we have transformed visions into reality."
+                "From luxurious residential villas to cutting-edge commercial complexes, each project reflects our passion for design excellence and our dedication to surpassing client expectations.Explore our portfolio to see how we have transformed visions into reality.",
               ]}
-              loop={false}
+              loop={1}
               cursor
               cursorStyle="_"
               typeSpeed={20}

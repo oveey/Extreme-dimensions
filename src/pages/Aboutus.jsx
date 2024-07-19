@@ -23,7 +23,7 @@ export const Aboutus = () => {
               words={[
                 "We are more than just architects and designers — we are creators of spaces that inspire, innovate, and endure. Based in Nigeria, our full-service architectural firm integrates a deep understanding of design principles with a commitment to excellence in every project we undertake",
               ]}
-              loop={false}
+              loop={1}
               cursor
               cursorStyle="_"
               typeSpeed={20}

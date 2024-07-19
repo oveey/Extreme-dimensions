@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/footer.css";
 import { Link } from "react-router-dom";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const Footer = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, // Duration of the animation in milliseconds
+      once: true, // Whether animation should happen only once - while scrolling down
+      startEvent: "DOMContentLoaded", // Trigger animations when the DOM is fully loaded
+      offset: 120, // Adjust this value as needed
+    });
+  }, []);
+
   return (
     <>
       <section className="footer__section">
         <div className="footer">
-          <div
-            className="footer__content"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-          >
+          <div className="footer__content" data-aos="fade-up" >
             <div className="footer__logo">
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720281552/logo_hblomh.png"
@@ -53,7 +60,7 @@ export const Footer = () => {
                   alt=""
                 />
               </a>
-              <a
+              {/* <a
                 href="https://www.twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -62,7 +69,7 @@ export const Footer = () => {
                   src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720304509/Twitter_qsgqcb.svg"
                   alt=""
                 />
-              </a>
+              </a> */}
               <a
                 href="https://www.instagram.com/xtremedimension/"
                 target="_blank"
@@ -77,7 +84,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="footer__section2">
-          <div className="footer__two" >
+          <div className="footer__two"data-aos="fade-up" >
             <p>
               &copy; {new Date().getFullYear()} Extremedimension. All rights
               reserved.

@@ -17,13 +17,12 @@ export const Service = () => {
       </section>
       <section className="text__under__section">
         <div className="text__under__con">
-       
           <p className="text__under">
             <Typewriter
               words={[
                 "We offer a comprehensive range of architectural and design services tailored to meet the diverse needs of our clients. Our integrated approach combines creativity, technical expertise, and client collaboration to deliver innovative and sustainable solutions..",
               ]}
-              loop={false}
+              loop={1}
               cursor
               cursorStyle="_"
               typeSpeed={20}
@@ -33,7 +32,7 @@ export const Service = () => {
           </p>
         </div>
       </section>
-      <section className="triple__image__section"></section>
+      {/* <section className="triple__image__section"></section> */}
       <section className="service__section">
         <div className="service__inner">
           <div

@@ -107,7 +107,7 @@ export const Home = () => {
                   alt=""
                 />
               </a>
-              <a
+              {/* <a
                 href="https://www.twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -116,7 +116,7 @@ export const Home = () => {
                   src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720304509/Twitter_qsgqcb.svg"
                   alt=""
                 />
-              </a>
+              </a> */}
               <a
                 href="https://www.instagram.com/xtremedimension/"
                 target="_blank"
@@ -694,13 +694,14 @@ export const Home = () => {
           <div className="build__image__con">
             <div
               className="big__image"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="3000"
             >
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278173/picture_6_eyx5tg.png"
                 alt=""
               />
+            
             </div>
 
             <div className="double__Image" data-aos="fade-up">
@@ -712,6 +713,7 @@ export const Home = () => {
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278169/picture_7_fiox2t.png"
                 alt=""
               />
+
             </div>
           </div>
         </div>
@@ -763,7 +765,7 @@ export const Home = () => {
                     </div>
                   </div>
                   <div className="pop__input__con__single">
-                    <label htmlFor="">Optional</label>
+                    <label htmlFor="">Upload document</label>
                     <br />
                     <input type="text" />
                   </div>

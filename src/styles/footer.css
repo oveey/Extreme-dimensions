@@ -52,14 +52,14 @@
 
 .footer__social a {
   color: #fff;
-  /* margin: 0 10px; */
   text-decoration: none;
   font-size: 20px;
 }
 
 .footer__social a:hover {
-  color: #ddd;
+  transform: scale(1.05); /* Slightly increase size */
 }
+
 
 .footer__section2 {
   margin: 30px 0;

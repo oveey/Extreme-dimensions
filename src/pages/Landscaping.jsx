@@ -6,6 +6,8 @@ import Carousel from "../component/Carousel";
 import { Footer } from "../component/Footer";
 import "../styles/architecture.css";
 import { images } from "../data";
+import { Typewriter } from "react-simple-typewriter";
+
 
 
 
@@ -127,14 +129,24 @@ export const Landscaping = () => {
       <section className="about__header__section">
         <div className="about__inner__con">
           <Nav />
-          <h1 className="about__header__text">Landscaping</h1>
+          <h1 className="about__header__text" data-aos="fade-up">Landscaping</h1>
         </div>
       </section>
       <section className="text__under__section">
-        <div className="text__under__con">
-          <p className="text__under">
-          At Xtreme Dimensions, we specialize in creating captivating outdoor spaces that enhance the aesthetic appeal, functionality, and sustainability of environments. Our landscaping services      </p>
-        </div>
+
+        <p className="text__under">
+            <Typewriter
+              words={[
+                "At Xtreme Dimensions, we specialize in creating captivating outdoor spaces that enhance the aesthetic appeal, functionality, and sustainability of environments. Our landscaping services."
+              ]}
+              loop={1}
+              cursor
+              cursorStyle="_"
+              typeSpeed={20}
+              deleteSpeed={10}
+              delaySpeed={1000}
+            />
+          </p>
       </section>
 
       <section className="design__two">

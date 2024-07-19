@@ -5,6 +5,8 @@ import "../styles/architecture.css";
 import Modal from "../component/Modal";
 import Carousel from "../component/Carousel";
 import { Footer } from "../component/Footer";
+import { Typewriter } from "react-simple-typewriter";
+
 
 export const Engineering = () => {
   const [showModal, setShowModal] = useState(false);
@@ -122,13 +124,23 @@ export const Engineering = () => {
       <section className="about__header__section">
         <div className="about__inner__con">
           <Nav />
-          <h1 className="about__header__text">Engineering Construction</h1>
+          <h1 className="about__header__text" data-aos="fade-up">Engineering Construction</h1>
         </div>
       </section>
       <section className="text__under__section">
         <div className="text__under__con">
           <p className="text__under">
-          Our engineering services is aimed at ensuring seamless construction processes and project success. With a focus on technical expertise, innovation, and client collaboration, we deliver reliable engineering solutions that meet the highest industry standards.
+            <Typewriter
+              words={[
+                "Our engineering services is aimed at ensuring seamless construction processes and project success. With a focus on technical expertise, innovation, and client collaboration, we deliver reliable engineering solutions that meet the highest industry standards...",
+              ]}
+              loop={1}
+              cursor
+              cursorStyle="_"
+              typeSpeed={20}
+              deleteSpeed={10}
+              delaySpeed={1000}
+            />
           </p>
         </div>
       </section>
