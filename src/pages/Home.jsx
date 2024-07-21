@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef  } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Nav } from "../component/Nav";
 import { Link } from "react-router-dom";
 import "../styles/home.css";
@@ -35,7 +35,6 @@ export const Home = () => {
     closePopup();
   };
 
-
   const formRef = useRef(null);
 
   useEffect(() => {
@@ -60,9 +59,6 @@ export const Home = () => {
       };
     }
   }, []);
-
-
-
 
   useEffect(() => {
     AOS.init({
@@ -163,7 +159,7 @@ export const Home = () => {
       <div className="video__section">
         <div className="video__con">
           <div className="inner__video__con">
-            <video controls width="100%">
+            <video controls width="100%" poster="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721564673/video_tdjzbk.png">
               <source src="your-video-link.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -696,7 +692,7 @@ export const Home = () => {
       </section>
       <section className="build__section">
         <div className="build__inner__con">
-          <div className="build__header" data-aos="fade-down">
+          <div className="build__header" data-aos="fade-up">
             <h1>WHAT WE BUILD</h1>
             <a href="/portfolio">
               <div className="btn">
@@ -730,7 +726,6 @@ export const Home = () => {
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278173/picture_6_eyx5tg.png"
                 alt=""
               />
-            
             </div>
 
             <div className="double__Image" data-aos="fade-up">
@@ -742,7 +737,6 @@ export const Home = () => {
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278169/picture_7_fiox2t.png"
                 alt=""
               />
-
             </div>
           </div>
         </div>
