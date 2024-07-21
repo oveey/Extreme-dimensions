@@ -430,7 +430,7 @@ export const Remodelling = () => {
       
 
       <section className="modal__section">
-        <h1 className="modal__section__heading">
+        <h1 className="modal__section__heading" data-aos="fade-up">
           See Our Completed Project On Remodeling & Renovation Designs
         </h1>
         <div className="carousel__modal">

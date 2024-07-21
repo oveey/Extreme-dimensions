@@ -14,9 +14,6 @@ export const Architectural = () => {
   const [activeImages, setActiveImages] = useState([]);
   const [doneTyping, setDoneTyping] = useState(false);
 
-
-
-
   const images = [
     {
       key: "set1",
@@ -132,12 +129,11 @@ export const Architectural = () => {
       offset: 120, // Adjust this value as needed
     });
   }, []);
-  
+
   const handleDone = () => {
     console.log("Typing done");
     setDoneTyping(true);
   };
-
 
   return (
     <>
@@ -685,8 +681,8 @@ export const Architectural = () => {
         </div>
       </section> */}
 
-      <section className="modal__section">
-        <h1 className="modal__section__heading">
+      <section className="modal__section" >
+        <h1 className="modal__section__heading" data-aos="fade-up">
           See Our Completed Project On Architectural Designs
         </h1>
         <div className="carousel__modal">
@@ -709,7 +705,9 @@ export const Architectural = () => {
                 </div>
               </div>
             ))}
-
+            <Modal show={showModal} onClose={closeModal}>
+              {activeImages.length > 0 && <Carousel images={activeImages} />}
+            </Modal>
           </div>
         </div>
       </section>

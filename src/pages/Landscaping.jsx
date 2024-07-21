@@ -271,7 +271,7 @@ export const Landscaping = () => {
       </section>
 
       <section className="modal__section">
-        <h1 className="modal__section__heading">
+        <h1 className="modal__section__heading" data-aos="fade-up">
           See Our Completed Project On Landscaping Designs
         </h1>
         <div className="carousel__modal">

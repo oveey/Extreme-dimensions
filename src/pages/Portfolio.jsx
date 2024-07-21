@@ -77,7 +77,7 @@ export const Portfolio = () => {
       </section>
 
       <section className="modal__section">
-        <h1 className="modal__section__heading">
+        <h1 className="modal__section__heading"data-aos="fade-up">
           See All Our Completed Projects
         </h1>
         <div

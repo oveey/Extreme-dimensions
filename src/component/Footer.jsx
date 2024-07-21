@@ -86,7 +86,7 @@ export const Footer = () => {
         <div className="footer__section2">
           <div className="footer__two"data-aos="fade-up" >
             <p>
-              &copy; {new Date().getFullYear()} Extremedimension. All rights
+              &copy; {new Date().getFullYear()} Xtremedimension. All rights
               reserved.
             </p>
             {/* <ul className="footer__links2">
