@@ -28,7 +28,7 @@
 .name__form {
   width: 100%;
 }
-.form-section{
+.form-section {
   margin-bottom: 200px;
 }
 
@@ -36,13 +36,12 @@
   display: flex;
   justify-content: space-between;
   gap: 100px;
-
 }
-form{
+.form__container form {
   width: 100%;
 }
 
-form input {
+.form__container form input {
   background-color: #e7e7e7;
   border: none;
   outline: none;
@@ -52,9 +51,14 @@ form input {
   padding: 10px;
 }
 
-
 .social__info {
   margin: 20px 0;
+}
+.Social__title h4 {
+  color: #081c46;
+}
+.Social__title p {
+  color: #404041;
 }
 .text__area__con {
   width: 100%;
@@ -79,14 +83,23 @@ form input {
   justify-content: center;
   font-size: 16px;
   margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-.social__info__con{
+.form__btn:hover {
+  transform: scale(1.05); /* Slightly increase size */
+}
+
+.Form__btn:hover svg {
+  transform: translateX(5px); /* Slightly move the arrow to the right */
+}
+
+.social__info__con {
   max-width: 800px;
   width: 100%;
-
 }
-
 
 .social__info__con img {
   width: 100%;
@@ -105,7 +118,7 @@ form input {
   /* .form__main {
     width: 100%;
   } */
- 
+
   .social__info {
     margin-bottom: 20px;
     width: 100%;
@@ -113,20 +126,16 @@ form input {
   .contact__header__text__con {
     width: 70%;
   }
- 
 
   .form__container {
     display: flex;
     justify-content: space-between;
     gap: 100px;
-  
   }
-  .social__info__con{
+  .social__info__con {
     width: 100%;
     max-width: 600px;
   }
- 
-  
 }
 
 @media (max-width: 480px) {

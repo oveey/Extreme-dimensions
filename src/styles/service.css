@@ -3,6 +3,7 @@
   justify-content: center;
   gap: 70px;
 }
+
 .service__inner {
   margin-bottom: 120px;
 }
@@ -78,7 +79,7 @@
   }
   .service__box__con > * {
     flex: 0 0 auto; 
-    max-width: 350px; 
+    max-width: 320px; 
   }  
   .service__text__con {
     flex-direction: column;

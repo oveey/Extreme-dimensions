@@ -5,6 +5,8 @@ import "../styles/architecture.css";
 import Modal from "../component/Modal";
 import Carousel from "../component/Carousel";
 import { Footer } from "../component/Footer";
+import { Typewriter } from "react-simple-typewriter";
+
 
 export const Engineering = () => {
   const [showModal, setShowModal] = useState(false);
@@ -122,20 +124,30 @@ export const Engineering = () => {
       <section className="about__header__section">
         <div className="about__inner__con">
           <Nav />
-          <h1 className="about__header__text">Engineering Construction</h1>
+          <h1 className="about__header__text" data-aos="fade-up">Engineering Construction</h1>
         </div>
       </section>
       <section className="text__under__section">
         <div className="text__under__con">
           <p className="text__under">
-          Our engineering services is aimed at ensuring seamless construction processes and project success. With a focus on technical expertise, innovation, and client collaboration, we deliver reliable engineering solutions that meet the highest industry standards.
+            <Typewriter
+              words={[
+                "Our engineering services is aimed at ensuring seamless construction processes and project success. With a focus on technical expertise, innovation, and client collaboration, we deliver reliable engineering solutions that meet the highest industry standards...",
+              ]}
+              loop={1}
+              cursor
+              cursorStyle="_"
+              typeSpeed={20}
+              deleteSpeed={10}
+              delaySpeed={1000}
+            />
           </p>
         </div>
       </section>
 
       <section className="design__two">
         <div className="design__two__innercon">
-          <div className="design__two__innercon__left">
+          <div className="design__two__innercon__left" data-aos="fade-up">
             <h1><span>01</span> Site Mapping and Drafting</h1>
             <p>
             Our site mapping and drafting services lay the foundation for precise project execution and planning. Key features include
@@ -145,7 +157,7 @@ export const Engineering = () => {
               alt=""
             />
           </div>
-          <div className="design__two__innercon__right">
+          <div className="design__two__innercon__right" data-aos="fade-up">
             <div className="design__below__image__text">
               <p>
                 {" "}
@@ -229,7 +241,7 @@ export const Engineering = () => {
       </section>
       <section className="design__two">
         <div className="design__two__innercon">
-          <div className="design__two__innercon__left">
+          <div className="design__two__innercon__left" data-aos="fade-up">
             <h1><span>02</span> Construction Management</h1>
             <p>
             We specialize in expert construction management services that optimize project efficiency and ensure quality outcomes. Our services include
@@ -239,7 +251,7 @@ export const Engineering = () => {
               alt=""
             />
           </div>
-          <div className="design__two__innercon__right">
+          <div className="design__two__innercon__right" data-aos="fade-up">
             <div className="design__below__image__text">
               <p>
                 {" "}
@@ -321,7 +333,7 @@ export const Engineering = () => {
 
       <section className="design__two">
         <div className="design__two__innercon">
-          <div className="design__two__innercon__left">
+          <div className="design__two__innercon__left" data-aos="fade-up">
             <h1><span>03</span> Structural Engineering</h1>
             <p>
             Our structural engineering expertise encompasses the design and analysis of building structures to ensure structural integrity and safety. Services include
@@ -331,7 +343,7 @@ export const Engineering = () => {
               alt=""
             />
           </div>
-          <div className="design__two__innercon__right">
+          <div className="design__two__innercon__right" data-aos="fade-up">
             <div className="design__below__image__text">
               <p>
                 {" "}
@@ -416,8 +428,8 @@ export const Engineering = () => {
 
   
 
-      <section className="modal__section">
-        <h1 className="modal__section__heading">
+      <section className="modal__section" >
+        <h1 className="modal__section__heading"data-aos="fade-up" >
           See Our Completed Project On Engineering Construction
         </h1>
         <div className="carousel__modal">

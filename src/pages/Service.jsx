@@ -2,6 +2,7 @@ import React from "react";
 import { Nav } from "../component/Nav";
 import "../styles/service.css";
 import { useState } from "react";
+import { Typewriter } from "react-simple-typewriter";
 import { Consult } from "../component/ Consult";
 import { Footer } from "../component/Footer";
 
@@ -11,23 +12,34 @@ export const Service = () => {
       <section className="about__header__section">
         <div className="about__inner__con">
           <Nav />
-          <h1 className="about__header__text"> Our Service</h1>
+          <h1 className="about__header__text"data-aos="fade-up"> Our Service</h1>
         </div>
       </section>
       <section className="text__under__section">
         <div className="text__under__con">
           <p className="text__under">
-            We offer a comprehensive range of architectural and design services
-            tailored to meet the diverse needs of our clients. Our integrated
-            approach combines creativity, technical expertise, and client
-            collaboration to deliver innovative and sustainable solutions.
+            <Typewriter
+              words={[
+                "We offer a comprehensive range of architectural and design services tailored to meet the diverse needs of our clients. Our integrated approach combines creativity, technical expertise, and client collaboration to deliver innovative and sustainable solutions..",
+              ]}
+              loop={1}
+              cursor
+              cursorStyle="_"
+              typeSpeed={20}
+              deleteSpeed={10}
+              delaySpeed={1000}
+            />
           </p>
         </div>
       </section>
-      <section className="triple__image__section"></section>
+      {/* <section className="triple__image__section"></section> */}
       <section className="service__section">
         <div className="service__inner">
-          <div className="service__text__con">
+          <div
+            className="service__text__con"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <h1>
               <span>01</span> Architectural Designs
             </h1>
@@ -60,8 +72,9 @@ export const Service = () => {
               </a>
             </div>
           </div>
-          <div className="service__box__con">
-            <div className="service__box__content">
+          <div className="service__box__con"data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
+            <div className="service__box__content" >
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721170809/Interior_o8vf8u.png"
                 alt=""
@@ -106,7 +119,11 @@ export const Service = () => {
           </div>
         </div>
         <div className="service__inner">
-          <div className="service__text__con">
+          <div
+            className="service__text__con"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <h1>
               <span>02</span> Engineering
             </h1>
@@ -139,7 +156,8 @@ export const Service = () => {
               </a>
             </div>
           </div>
-          <div className="service__box__con">
+          <div className="service__box__con" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
             <div className="service__box__content">
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"
@@ -185,7 +203,11 @@ export const Service = () => {
           </div>
         </div>
         <div className="service__inner">
-          <div className="service__text__con">
+          <div
+            className="service__text__con"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <h1>
               <span>03</span> Landscaping
             </h1>
@@ -218,7 +240,8 @@ export const Service = () => {
               </a>
             </div>
           </div>
-          <div className="service__box__con">
+          <div className="service__box__con" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
             <div className="service__box__content">
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"
@@ -264,7 +287,11 @@ export const Service = () => {
           </div>
         </div>
         <div className="service__inner">
-          <div className="service__text__con">
+          <div
+            className="service__text__con"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <h1>
               <span>04</span> Remodeling & Renovation
             </h1>
@@ -298,7 +325,8 @@ export const Service = () => {
               </a>
             </div>
           </div>
-          <div className="service__box__con">
+          <div className="service__box__con" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
             <div className="service__box__content">
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"
