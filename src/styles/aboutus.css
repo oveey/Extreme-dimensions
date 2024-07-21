@@ -122,7 +122,6 @@ section {
   .img__header {
     color: var(--Gulf-Blue-950, #001a52);
     /* text-align: center; */
-
     /* Display sm Bold */
     font-family: Kufam;
     font-size: 30px;
@@ -146,25 +145,13 @@ section {
     margin-bottom: 10px;
     margin-top: 30px;
     color: var(--pic-bg, #2e4a77);
-
-    /* Display sm Semibold */
-    font-family: Kufam;
     font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
     line-height: 38px; /* 126.667% */
   }
   .our__mission__text__con p {
     font-size: 18px;
-    margin-bottom: 10px;
-    margin-top: 10px;
     color: var(--Cod-Gray-900, #3d3d3d);
-
-    /* Text lg Medium */
-    font-family: Kufam;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
     line-height: 28px; /* 155.556% */
   }
   .company__history__con {
@@ -180,7 +167,7 @@ section {
     
   }
   .our__mission__main__text{
-    
+    margin-top: 50px;
     margin-bottom: 60px;
   }
   .company__history__main__con{

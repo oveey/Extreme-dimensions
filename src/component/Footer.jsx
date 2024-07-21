@@ -89,7 +89,7 @@ export const Footer = () => {
               &copy; {new Date().getFullYear()} Extremedimension. All rights
               reserved.
             </p>
-            <ul className="footer__links2">
+            {/* <ul className="footer__links2">
               <li>
                 <a href="/terms">Terms</a>
               </li>
@@ -99,7 +99,7 @@ export const Footer = () => {
               <li>
                 <a href="/cookies">Cookies</a>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </section>

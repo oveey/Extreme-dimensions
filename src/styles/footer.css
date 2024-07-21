@@ -67,7 +67,7 @@
 
 .footer__two {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer__links2 {
@@ -105,10 +105,10 @@
    gap: 30px;
    margin-top: 30px;
   }
-  .footer__two {
+  /* .footer__two {
     flex-direction: column;
 
-  }
+  } */
   .footer__two p{
     margin-top: 20px;
     margin-bottom: 20px;
