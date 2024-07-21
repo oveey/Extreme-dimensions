@@ -15,6 +15,8 @@ export const Architectural = () => {
   const [doneTyping, setDoneTyping] = useState(false);
 
 
+
+
   const images = [
     {
       key: "set1",
@@ -135,6 +137,7 @@ export const Architectural = () => {
     console.log("Typing done");
     setDoneTyping(true);
   };
+
 
   return (
     <>
@@ -706,9 +709,7 @@ export const Architectural = () => {
                 </div>
               </div>
             ))}
-            <Modal show={showModal} onClose={closeModal}>
-              {activeImages.length > 0 && <Carousel images={activeImages} />}
-            </Modal>
+
           </div>
         </div>
       </section>

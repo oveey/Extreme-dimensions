@@ -14,6 +14,7 @@ export const Portfolio = () => {
   const [showModal, setShowModal] = useState(false);
   const [activeImages, setActiveImages] = useState([]);
   const [tabImages, setTabImages] = useState(images);
+  const [activeButton, setActiveButton] = useState("");
 
   const handleClick = (tabName) => {
     if (tabName === "all") {
@@ -33,6 +34,7 @@ export const Portfolio = () => {
         images.filter((remoImage) => remoImage.category === "remodel")
       );
     }
+    setActiveButton(tabName);
   };
 
   console.log(images);
@@ -75,38 +77,55 @@ export const Portfolio = () => {
       </section>
 
       <section className="modal__section">
+        <h1 className="modal__section__heading">
+          See All Our Completed Projects
+        </h1>
         <div
           className="heading__con"
-          data-aos="fade-up"
+          data-aos="fade-down"
           data-aos-duration="1000"
         >
-          <button className="heading__btn" onClick={() => handleClick("all")}>
-            all
+          <button
+            className={`heading__btn ${activeButton === "all" ? "active" : ""}`}
+            onClick={() => handleClick("all")}
+          >
+            All
           </button>
           <button
-            className="heading__btn"
+            className={`heading__btn ${
+              activeButton === "landscaping" ? "active" : ""
+            }`}
             onClick={() => handleClick("landscaping")}
           >
             landscaping
           </button>
           <button
-            className="heading__btn"
+            className={`heading__btn ${
+              activeButton === "remodel" ? "active" : ""
+            }`}
             onClick={() => handleClick("remodel")}
           >
             Remodeling
           </button>
           <button
-            className="heading__btn"
-            onClick={() => handleClick("engineer")}
+            className={`heading__btn ${
+              activeButton === "engineering" ? "active" : ""
+            }`}
+            onClick={() => handleClick("engineering")}
           >
-            engineer
+            engineering
           </button>
-          <button className="heading__btn" onClick={() => handleClick("arch")}>
+          <button
+            className={`heading__btn ${
+              activeButton === "architectural" ? "active" : ""
+            }`}
+            onClick={() => handleClick("architectural")}
+          >
             architectural
           </button>
         </div>
         <div className="carousel__modal">
-          <div className="app" data-aos="fade-up" data-aos-duration="3000">
+          <div className="app">
             {tabImages?.map((imageSet) => (
               <div key={imageSet.key} onClick={() => openModal(imageSet.urls)}>
                 {/* <img src={imageSet.urls[0]} alt="" /> */}

@@ -6,13 +6,10 @@
   background-image: url("https://res.cloudinary.com/dw3vqhvte/image/upload/v1721174728/Background_frlypc.jpg");
   background-position: center;
   background-size: cover;
-  /* padding: 5px 5px; */
   font-family: "Kufam";
   padding-bottom: 150px;
   margin-top: 0;
 }
-
-
 
 .header__text {
   color: #fff;
@@ -26,10 +23,9 @@
   letter-spacing: -1.44px;
 }
 .header__text__con {
-  height: 40vh; /* Adjust the height based on your design */
+  height: 40vh; 
 }
 .btn__link {
-  /* width: 70%;  */
   display: flex;
   align-items: center;
 }
@@ -47,8 +43,7 @@
   gap: 10px;
   margin-top: 40px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 .btn:hover {
   transform: scale(1.05); /* Slightly increase size */
@@ -59,7 +54,7 @@
 }
 
 .header__text span {
-  color: #d9d9d9;
+  color: #edf2f8;
 }
 
 .header__mini__text {
@@ -430,7 +425,7 @@ video {
 }
 
 .pop__input__con input {
-  background-color: #c4c4c4;
+  background-color: #d2d2d2;
   border: none;
   outline: none;
   height: 50px;
@@ -439,30 +434,36 @@ video {
   padding: 10px;
   margin-bottom: 30px;
 }
-
+textarea {
+  padding: 10px ;
+}
 .pop__message__con {
-  width: 50%;
+  width: 80%;
+}
+
+.Popup__main {
+  width: 100%;
+  
 }
 
 .pop__message__con textarea {
   width: 100%;
-  background-color: #c4c4c4;
+  background-color: #d2d2d2;
   border: none;
   outline: none;
   border-radius: 10px;
-  padding: 10px;
 }
 
 .consultation__form {
   display: flex;
   justify-content: space-between;
-  width: 900px;
+  gap: 70px;
   padding: 20px;
   border-radius: 10px;
 }
 
 .pop__input__con__single input {
-  background-color: #c4c4c4;
+  background-color: #d2d2d2;
   border: none;
   outline: none;
   height: 50px;
@@ -477,13 +478,15 @@ video {
 }
 
 .popup__form__con {
-  background-color: rgba(232, 232, 232, 0.907);
-  backdrop-filter: blur(3.799999952316284px);
+  background-color: rgb(232, 232, 232);
+  width: 80vw;
   padding: 20px;
   margin: 0 auto;
   margin-top: 10px;
   border-radius: 10px;
-  overflow-y: auto;
+  overflow-x: hidden; /* Hide any potential overflow */
+
+
 }
 
 .popup__header {
@@ -501,12 +504,11 @@ video {
   border-radius: 100%;
   background-color: inherit;
   font-size: 30px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 @media (max-width: 999px) {
   .header__mini__text {
-    /* font-size: 30px; */
     line-height: 26px;
     transform: translateX(300px);
     gap: 20px;
@@ -521,17 +523,29 @@ video {
     width: 100%;
   }
   .consultation__form {
-    display: flex;
-    padding: 30px;
-    gap: 20px;
-    border-radius: 10px;
     flex-direction: column;
   }
 
-  /* .pop__message__con{
+  .popup__form__con {
+    padding: 20px;
+    margin-top: 200px;
+    padding-bottom: 100px; /* Ensures space for the keyboard */
+  }
+
+  .Popup__main {
     width: 100%;
   }
-   */
+  .pop__message__con {
+    width: 100%;
+  }
+  .popup__header {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .popup__header {
+    padding: 30px 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -542,20 +556,6 @@ video {
   video {
     height: 35vh;
   }
-  .header__text__con {
-    /* height: 200px;  */
-  }
-
-  /* .video__con {
-    width: 90%;
-    margin: 0 auto;
-  } */
-
-  /* .btn {
-    font-size: 14px;
-    padding: 8px 16px;
-    margin-top: 30px;
-  } */
 
   .header__mini__text {
     font-size: 30px;
@@ -565,44 +565,43 @@ video {
     width: 50%;
   }
 
-  /* .consultation__con {
-    padding: 30px 0;
-  } */
+  
 
   .popup__form__con {
     padding: 20px;
-    margin-top: 700px;
-    width: 70%;
+    margin-top: 900px;
+    width: 90%;
+    overflow-y: auto;
+    height: 25%; /* or any other appropriate height */
+    padding-bottom: 100px; /* Ensures space for the keyboard */
   }
-  
+
+  .popup__header {
+    font-size: 16px;
+    padding: 0;
+  }
 
   .pop__input__con {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .pop__message__con {
-    width: 100%;
-  }
 
   .consultation__form {
     display: flex;
-    width: 400px;
+    padding: 0;
   }
 
   .popup__header {
-    padding: 10px 30px;
+    padding: 30px 0;
   }
 
   .header__text {
     font-size: 40px;
     letter-spacing: 0.64px;
-    /* padding: 0px 10px; */
   }
   .btn {
     font-size: 15px;
-    /* padding: 16px 22px; */
-    /* margin-top: 50px; */
   }
   .header__mini__text {
     font-size: 20px;
@@ -617,7 +616,6 @@ video {
 
   .who__text__con {
     padding: 40px 5px;
-    /* font-size: 14px; */
     line-height: 28px;
   }
 
@@ -662,7 +660,6 @@ video {
 
   .engineering__text__con p {
     font-size: 18px;
-    /* line-height: 22px; */
     margin-top: 15px;
   }
   .build__section {
@@ -743,12 +740,7 @@ video {
   .learn {
     margin-top: 35px;
     color: var(--Gulf-Blue-950, #001a52);
-
-    font-family: Kufam;
     font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
   }
   .list__con {
     margin-top: 30px;
@@ -807,7 +799,7 @@ video {
     letter-spacing: -0.96px;
   }
   .consultation__con {
-    padding: 0;
+    padding: 20px;
   }
 
   .btn {

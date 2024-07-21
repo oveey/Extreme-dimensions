@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef  } from "react";
 import { Nav } from "../component/Nav";
 import { Link } from "react-router-dom";
 import "../styles/home.css";
@@ -34,6 +34,35 @@ export const Home = () => {
     // Close the popup after submission
     closePopup();
   };
+
+
+  const formRef = useRef(null);
+
+  useEffect(() => {
+    const form = formRef.current;
+    if (form) {
+      const inputs = form.querySelectorAll("input, textarea, select");
+
+      const handleFocus = (event) => {
+        setTimeout(() => {
+          event.target.scrollIntoView({ behavior: "smooth", block: "center" });
+        }, 300); // Adjust timeout as needed
+      };
+
+      inputs.forEach((input) => {
+        input.addEventListener("focus", handleFocus);
+      });
+
+      return () => {
+        inputs.forEach((input) => {
+          input.removeEventListener("focus", handleFocus);
+        });
+      };
+    }
+  }, []);
+
+
+
 
   useEffect(() => {
     AOS.init({
