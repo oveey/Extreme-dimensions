@@ -11,9 +11,9 @@
 h1 span {
   color: var(--Cod-Gray-300, #b0b0b0);
 }
-.text__under__section {
+/* .text__under__section {
   margin-bottom: 120px;
-}
+} */
 .main__con p {
   line-height: 25px;
   border: 1px solid red;

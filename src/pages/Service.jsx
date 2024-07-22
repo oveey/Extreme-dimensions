@@ -12,7 +12,10 @@ export const Service = () => {
       <section className="about__header__section">
         <div className="about__inner__con">
           <Nav />
-          <h1 className="about__header__text"data-aos="fade-up"> Our Service</h1>
+          <h1 className="about__header__text" data-aos="fade-up">
+            {" "}
+            Our Services
+          </h1>
         </div>
       </section>
       <section className="text__under__section">
@@ -53,7 +56,7 @@ export const Service = () => {
               </p>
               <a href="/architectural" className="btn__link">
                 <div className="btn service__btn">
-                  <p>Learn more architecture</p>
+                  <p>Learn more on architecture</p>
                   <p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -72,9 +75,12 @@ export const Service = () => {
               </a>
             </div>
           </div>
-          <div className="service__box__con"data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">
-            <div className="service__box__content" >
+          <div
+            className="service__box__con"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <div className="service__box__content">
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721170809/Interior_o8vf8u.png"
                 alt=""
@@ -156,8 +162,11 @@ export const Service = () => {
               </a>
             </div>
           </div>
-          <div className="service__box__con" data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">
+          <div
+            className="service__box__con"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
             <div className="service__box__content">
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"
@@ -240,8 +249,11 @@ export const Service = () => {
               </a>
             </div>
           </div>
-          <div className="service__box__con" data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">
+          <div
+            className="service__box__con"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
             <div className="service__box__content">
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"
@@ -325,8 +337,11 @@ export const Service = () => {
               </a>
             </div>
           </div>
-          <div className="service__box__con" data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">
+          <div
+            className="service__box__con"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
             <div className="service__box__content">
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"

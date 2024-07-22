@@ -77,14 +77,10 @@ export const Portfolio = () => {
       </section>
 
       <section className="modal__section">
-        <h1 className="modal__section__heading"data-aos="fade-up">
+        <h1 className="modal__section__heading" data-aos="fade-up">
           See All Our Completed Projects
         </h1>
-        <div
-          className="heading__con"
-          data-aos="fade-down"
-          data-aos-duration="1000"
-        >
+        <div className="heading__con">
           <button
             className={`heading__btn ${activeButton === "all" ? "active" : ""}`}
             onClick={() => handleClick("all")}

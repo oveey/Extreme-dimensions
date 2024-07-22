@@ -33,10 +33,14 @@ export const Aboutus = () => {
           </p>
         </div>
       </section>
-      <div className="video__section">
+      <div className="video__section" data-aos="zoom-in-up">
         <div className="video__con">
           <div className="inner__video__con">
-            <video controls width="100%">
+            <video
+              controls
+              width="100%"
+              poster="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721564673/video_tdjzbk.png"
+            >
               <source src="your-video-link.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>

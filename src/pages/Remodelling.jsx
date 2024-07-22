@@ -244,7 +244,7 @@ export const Remodelling = () => {
       <section className="design__two">
         <div className="design__two__innercon">
           <div className="design__two__innercon__left">
-            <h1><span>01</span> Commercial Renovations</h1>
+            <h1><span>02</span> Commercial Renovations</h1>
             <p>
             We specialize in revitalizing commercial spaces to optimize functionality, efficiency, and appeal, creating environments that support business objectives and enhance customer experiences. Services include
             </p>
@@ -336,7 +336,7 @@ export const Remodelling = () => {
       <section className="design__two">
         <div className="design__two__innercon">
           <div className="design__two__innercon__left">
-            <h1><span>01</span> Institutional Facilities</h1>
+            <h1><span>03</span> Institutional Facilities</h1>
             <p>
             We provide renovation solutions for institutional facilities such as schools, healthcare facilities, and community centers, focusing on improving functionality, safety, and sustainability. Services include
             </p>

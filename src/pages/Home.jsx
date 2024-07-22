@@ -169,7 +169,7 @@ export const Home = () => {
         <div className="who__inner__con">
           <div className="who__more__info">
             <div className="who_left_con" data-aos="fade-up">
-              <h1 className="who__head__text">Who We Are</h1>
+              <h1 className="who__head__text">About Us</h1>
               <div className="img__con">
                 <img
                   src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278165/picture_1_wqmmkw.png"
@@ -222,19 +222,19 @@ export const Home = () => {
         <div className="projects__con">
           <div className="project__info">
             <h1 className="project__big_t">
-              <CountUp start={0} end={1995} duration={5} />
+              <CountUp start={0} end={1995} duration={12} separator=""  />
             </h1>
-            <p>YEAR OF ESTABLISHMENT</p>
+            <p>YEARS OF ESTABLISHMENT</p>
           </div>
           <div className="project__info">
             <h1 className="project__big_t">
-              <CountUp start={0} end={5000} duration={5} />
+              <CountUp start={0} end={5000} duration={12} separator="" suffix="+"  />
             </h1>
             <p>PROJECTS & COUNTING</p>
           </div>
           <div className="project__info final">
             <h1 className="project__big_t">
-              <CountUp start={0} end={30} duration={5} />
+              <CountUp start={0} end={29} duration={12} />
             </h1>
             <p>YEARS OF EXPERIENCE</p>
           </div>

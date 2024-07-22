@@ -41,7 +41,7 @@ export const Nav = () => {
                         <NavLink to="/about-us" className='nav_link'>About us</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/service" className='nav_link'>Service</NavLink>
+                        <NavLink to="/service" className='nav_link'>Our Services</NavLink>
                     </li>
                     
                     <li>

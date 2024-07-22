@@ -100,15 +100,15 @@ section {
 
 @media (max-width: 768px) {
   .text__under {
-    padding: 0 10px;
-    color: var(--pic-bg, #2e4a77);
-    font-family: Kufam;
+    padding: 10px;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
     line-height: 35px;
-    /* width: 100%; */
+    width: 100%; 
+    margin-bottom: 90px;
+
+ 
   }
+ 
   .about__header__text {
     color: var(--Cod-Gray-50, #f6f6f6);
 
