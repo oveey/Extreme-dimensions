@@ -172,7 +172,7 @@ export const Service = () => {
           >
             <div className="service__box__content">
               <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721744316/site_1_twjvkr.png"
                 alt=""
               />
               <div className="content">
@@ -186,7 +186,7 @@ export const Service = () => {
             </div>
             <div className="service__box__content">
               <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721744305/Con1_gdpsxj.png"
                 alt=""
               />
               <div className="content">
@@ -200,7 +200,7 @@ export const Service = () => {
             </div>
             <div className="service__box__content">
               <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721745386/hhhh_kbmoeg.png"
                 alt=""
               />
               <div className="content">
@@ -259,11 +259,11 @@ export const Service = () => {
           >
             <div className="service__box__content">
               <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721744539/water_odc1fl.png"
                 alt=""
               />
               <div className="content">
-                <h1>Interior Designs</h1>
+                <h1>Water Features</h1>
                 <p>
                   Our interior design services are tailored to create
                   personalized and functional interiors that elevate living or
@@ -273,11 +273,11 @@ export const Service = () => {
             </div>
             <div className="service__box__content">
               <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721744307/hard_1_xgb0tv.png"
                 alt=""
               />
               <div className="content">
-                <h1>Interior Designs</h1>
+                <h1>Hardscape Design</h1>
                 <p>
                   Our interior design services are tailored to create
                   personalized and functional interiors that elevate living or
@@ -287,11 +287,11 @@ export const Service = () => {
             </div>
             <div className="service__box__content">
               <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721744312/plant_1_xwcchw.png"
                 alt=""
               />
               <div className="content">
-                <h1>Interior Designs</h1>
+                <h1>Plant Selection</h1>
                 <p>
                   Our interior design services are tailored to create
                   personalized and functional interiors that elevate living or

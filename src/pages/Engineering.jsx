@@ -261,7 +261,7 @@ export const Engineering = () => {
               services include
             </p>
             <img
-              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png"
+              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721741976/construction_mwiyjt.png"
               alt=""
             />
           </div>

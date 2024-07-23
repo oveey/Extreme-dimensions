@@ -159,7 +159,7 @@ export const Landscaping = () => {
               overall aesthetic appeal of properties. Key features include:{" "}
             </p>
             <img
-              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png"
+              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721741641/landscaping_u4txh4.png"
               alt=""
             />
           </div>

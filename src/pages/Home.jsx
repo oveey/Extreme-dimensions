@@ -523,7 +523,7 @@ export const Home = () => {
         <div className="engineering__con landscaping">
           <div className="engineering__img" data-aos="fade-up">
             <img
-              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278172/picture_5_x9qxor.png"
+              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721746698/land_iqalv0.png"
               alt=""
             />
           </div>
@@ -599,7 +599,7 @@ export const Home = () => {
         <div className="engineering__con ">
           <div className="engineering__img" data-aos="fade-up">
             <img
-              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278166/picture_4_drvlfg.png"
+              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721746675/Remode_nblobf.png"
               alt=""
             />
           </div>
@@ -735,7 +735,7 @@ export const Home = () => {
                 alt=""
               />
                  <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721669893/port_pzr8ki.png"
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721746846/port21_nhbtgm.png"
                 alt=""
               />
             </div>
