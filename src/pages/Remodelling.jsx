@@ -7,7 +7,6 @@ import Modal from "../component/Modal";
 import Carousel from "../component/Carousel";
 import { Typewriter } from "react-simple-typewriter";
 
-
 export const Remodelling = () => {
   const [showModal, setShowModal] = useState(false);
   const [activeImages, setActiveImages] = useState([]);
@@ -123,15 +122,17 @@ export const Remodelling = () => {
       <section className="about__header__section">
         <div className="about__inner__con">
           <Nav />
-          <h1 className="about__header__text" data-aos="fade-up"> Remodeling & Renovation</h1>
+          <h1 className="about__header__text" data-aos="fade-up">
+            {" "}
+            Engineering Designs{" "}
+          </h1>
         </div>
       </section>
       <section className="text__under__section">
         <div className="text__under__con">
-          <p className="text__under">
-            <Typewriter
+          <p className="text__under" data-aos="fade-up">
+            {/* <Typewriter
               words={[
-                " At Xtreme Dimensions, we also specialize in transforming existing spaces into modern, functional, and aesthetically pleasing environments through our remodeling and renovation services. Whether enhancing residential homes, commercial properties, or institutional facilities, we focus on delivering innovative solutions that exceed client expectations..",
               ]}
               loop={1}
               cursor
@@ -139,20 +140,29 @@ export const Remodelling = () => {
               typeSpeed={20}
               deleteSpeed={10}
               delaySpeed={1000}
-            />
+            /> */}
+            Our engineering services is aimed at ensuring seamless construction
+            processes and project success. With a focus on technical expertise,
+            innovation, and client collaboration, we deliver reliable
+            engineering solutions that meet the highest industry standards...",
           </p>
         </div>
       </section>
 
-
       <section className="design__two">
         <div className="design__two__innercon">
           <div className="design__two__innercon__left">
-            <h1><span>01</span>Residential Remodeling</h1>
+            <h1>
+              <span>01</span>Residential Remodeling
+            </h1>
             <p>
-            Our residential remodeling services are tailored to meet the unique needs and preferences of homeowners, enhancing living spaces to reflect personal style and functionality. Key services include</p>
+              Our residential remodeling services are tailored to meet the
+              unique needs and preferences of homeowners, enhancing living
+              spaces to reflect personal style and functionality. Key services
+              include
+            </p>
             <img
-              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png"
+              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721678314/resident_dx1yma.png"
               alt=""
             />
           </div>
@@ -178,7 +188,9 @@ export const Remodelling = () => {
               <div className="design__text">
                 <h1>Kitchen and Bathroom Renovations </h1>
                 <p>
-                Transforming kitchens and bathrooms with modern amenities, stylish fixtures, and efficient layouts to optimize functionality and aesthetics.
+                  Transforming kitchens and bathrooms with modern amenities,
+                  stylish fixtures, and efficient layouts to optimize
+                  functionality and aesthetics.
                 </p>
               </div>
             </div>
@@ -203,7 +215,8 @@ export const Remodelling = () => {
               <div className="design__text">
                 <h1>Interior Upgrades</h1>
                 <p>
-                Upgrading interior spaces with new flooring, lighting, cabinetry, and finishes to enhance comfort and visual appeal.
+                  Upgrading interior spaces with new flooring, lighting,
+                  cabinetry, and finishes to enhance comfort and visual appeal.
                 </p>
               </div>
             </div>
@@ -228,28 +241,30 @@ export const Remodelling = () => {
               <div className="design__text">
                 <h1>Home Additions</h1>
                 <p>
-                Designing and constructing new additions to expand living areas and accommodate growing family needs while seamlessly integrating with existing structures.
+                  Designing and constructing new additions to expand living
+                  areas and accommodate growing family needs while seamlessly
+                  integrating with existing structures.
                 </p>
               </div>
-
-              
             </div>
-            
           </div>
         </div>
       </section>
 
-
-
       <section className="design__two">
         <div className="design__two__innercon">
           <div className="design__two__innercon__left">
-            <h1><span>02</span> Commercial Renovations</h1>
+            <h1>
+              <span>02</span> Commercial Renovations
+            </h1>
             <p>
-            We specialize in revitalizing commercial spaces to optimize functionality, efficiency, and appeal, creating environments that support business objectives and enhance customer experiences. Services include
+              We specialize in revitalizing commercial spaces to optimize
+              functionality, efficiency, and appeal, creating environments that
+              support business objectives and enhance customer experiences.
+              Services include
             </p>
             <img
-              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png"
+              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721677747/commercial_xosuot.png"
               alt=""
             />
           </div>
@@ -275,7 +290,9 @@ export const Remodelling = () => {
               <div className="design__text">
                 <h1>Office Interiors</h1>
                 <p>
-                Designing and renovating office interiors to foster productivity, collaboration, and employee well-being through strategic space planning and modern design concepts.
+                  Designing and renovating office interiors to foster
+                  productivity, collaboration, and employee well-being through
+                  strategic space planning and modern design concepts.
                 </p>
               </div>
             </div>
@@ -300,7 +317,9 @@ export const Remodelling = () => {
               <div className="design__text">
                 <h1>Retail Spaces</h1>
                 <p>
-                Transforming retail environments with innovative layouts, attractive displays, and customer-centric designs to enhance brand identity and customer engagement.
+                  Transforming retail environments with innovative layouts,
+                  attractive displays, and customer-centric designs to enhance
+                  brand identity and customer engagement.
                 </p>
               </div>
             </div>
@@ -325,7 +344,9 @@ export const Remodelling = () => {
               <div className="design__text">
                 <h1>Hospitality Upgrades</h1>
                 <p>
-                Renovating hospitality venues such as hotels, restaurants, and resorts to create inviting atmospheres that elevate guest experiences and drive business success.
+                  Renovating hospitality venues such as hotels, restaurants, and
+                  resorts to create inviting atmospheres that elevate guest
+                  experiences and drive business success.
                 </p>
               </div>
             </div>
@@ -336,9 +357,14 @@ export const Remodelling = () => {
       <section className="design__two">
         <div className="design__two__innercon">
           <div className="design__two__innercon__left">
-            <h1><span>03</span> Institutional Facilities</h1>
+            <h1>
+              <span>03</span> Institutional Facilities
+            </h1>
             <p>
-            We provide renovation solutions for institutional facilities such as schools, healthcare facilities, and community centers, focusing on improving functionality, safety, and sustainability. Services include
+              We provide renovation solutions for institutional facilities such
+              as schools, healthcare facilities, and community centers, focusing
+              on improving functionality, safety, and sustainability. Services
+              include
             </p>
             <img
               src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png"
@@ -367,7 +393,9 @@ export const Remodelling = () => {
               <div className="design__text">
                 <h1> Educational Spaces </h1>
                 <p>
-                Upgrading classrooms, libraries, and administrative areas with modern amenities and technology integration to support learning and growth.
+                  Upgrading classrooms, libraries, and administrative areas with
+                  modern amenities and technology integration to support
+                  learning and growth.
                 </p>
               </div>
             </div>
@@ -392,7 +420,9 @@ export const Remodelling = () => {
               <div className="design__text">
                 <h1>Healthcare Environments</h1>
                 <p>
-                Enhancing healthcare facilities with patient-friendly designs, efficient workflows, and infection control measures to promote healing and well-being.
+                  Enhancing healthcare facilities with patient-friendly designs,
+                  efficient workflows, and infection control measures to promote
+                  healing and well-being.
                 </p>
               </div>
             </div>
@@ -417,17 +447,15 @@ export const Remodelling = () => {
               <div className="design__text">
                 <h1>Community Spaces</h1>
                 <p>
-                Renovating community centers, religious buildings, and public spaces to serve the needs of diverse communities and enhance social connectivity.
+                  Renovating community centers, religious buildings, and public
+                  spaces to serve the needs of diverse communities and enhance
+                  social connectivity.
                 </p>
               </div>
-
-              
             </div>
-            
           </div>
         </div>
       </section>
-      
 
       <section className="modal__section">
         <h1 className="modal__section__heading" data-aos="fade-up">
@@ -459,7 +487,6 @@ export const Remodelling = () => {
           </div>
         </div>
       </section>
-    
 
       <Footer />
     </>

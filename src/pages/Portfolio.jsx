@@ -60,10 +60,9 @@ export const Portfolio = () => {
       </section>
       <section className="text__under__section">
         <div className="text__under__con">
-          <p className="text__under">
-            <Typewriter
+          <p className="text__under" data-aos="fade-up">
+            {/* <Typewriter
               words={[
-                "From luxurious residential villas to cutting-edge commercial complexes, each project reflects our passion for design excellence and our dedication to surpassing client expectations.Explore our portfolio to see how we have transformed visions into reality.",
               ]}
               loop={1}
               cursor
@@ -71,7 +70,11 @@ export const Portfolio = () => {
               typeSpeed={20}
               deleteSpeed={10}
               delaySpeed={1000}
-            />
+            /> */}
+            From luxurious residential villas to cutting-edge commercial
+            complexes, each project reflects our passion for design excellence
+            and our dedication to surpassing client expectations.Explore our
+            portfolio to see how we have transformed visions into reality.",
           </p>
         </div>
       </section>

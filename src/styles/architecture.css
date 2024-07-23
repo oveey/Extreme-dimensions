@@ -143,11 +143,13 @@ h1 span {
 }
 .app {
   display: flex;
-  justify-content: space-around;
-  gap: 30px;
+  justify-content: space-between;
+  gap: 8px;
   width: 100%;
-  flex-wrap: wrap;
+  overflow-x: auto;
+  /* flex-wrap: wrap; */
 }
+
 .image__con {
   filter: saturate(0.1);
 }

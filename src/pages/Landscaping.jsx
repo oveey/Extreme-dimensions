@@ -8,9 +8,6 @@ import "../styles/architecture.css";
 import { images } from "../data";
 import { Typewriter } from "react-simple-typewriter";
 
-
-
-
 export const Landscaping = () => {
   const [showModal, setShowModal] = useState(false);
   const [activeImages, setActiveImages] = useState([]);
@@ -111,9 +108,7 @@ export const Landscaping = () => {
       mainT: "Beautiful Hotel",
       smallT: "lagos ,Nigeria",
     },
-
   ];
-
 
   const openModal = (urls) => {
     setActiveImages(urls);
@@ -129,15 +124,15 @@ export const Landscaping = () => {
       <section className="about__header__section">
         <div className="about__inner__con">
           <Nav />
-          <h1 className="about__header__text" data-aos="fade-up">Landscaping</h1>
+          <h1 className="about__header__text" data-aos="fade-up">
+            Landscaping
+          </h1>
         </div>
       </section>
-      <section className="text__under__section">
-
+      <section className="text__under__section" data-aos="fade-up">
         <p className="text__under">
-            <Typewriter
+          {/* <Typewriter
               words={[
-                "At Xtreme Dimensions, we specialize in creating captivating outdoor spaces that enhance the aesthetic appeal, functionality, and sustainability of environments. Our landscaping services."
               ]}
               loop={1}
               cursor
@@ -145,16 +140,24 @@ export const Landscaping = () => {
               typeSpeed={20}
               deleteSpeed={10}
               delaySpeed={1000}
-            />
-          </p>
+            /> */}
+          At Xtreme Dimensions, we specialize in creating captivating outdoor
+          spaces that enhance the aesthetic appeal, functionality, and
+          sustainability of environments. Our landscaping services."
+        </p>
       </section>
 
       <section className="design__two">
         <div className="design__two__innercon">
           <div className="design__two__innercon__left">
-            <h1><span>01</span> Landscape Design</h1>
+            <h1>
+              <span>01</span> Landscape Design
+            </h1>
             <p>
-            Landscape design services focus on creating tailored outdoor environments that complement architectural designs and enrich the overall aesthetic appeal of properties. Key features include:            </p>
+              Landscape design services focus on creating tailored outdoor
+              environments that complement architectural designs and enrich the
+              overall aesthetic appeal of properties. Key features include:{" "}
+            </p>
             <img
               src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png"
               alt=""
@@ -182,7 +185,8 @@ export const Landscaping = () => {
               <div className="design__text">
                 <h1>Conceptual Design </h1>
                 <p>
-                Developing innovative and sustainable landscape concepts that harmonize with architectural styles and client preferences.
+                  Developing innovative and sustainable landscape concepts that
+                  harmonize with architectural styles and client preferences.
                 </p>
               </div>
             </div>
@@ -207,7 +211,9 @@ export const Landscaping = () => {
               <div className="design__text">
                 <h1>Plant Selection</h1>
                 <p>
-                Expert selection of flora and fauna to enhance biodiversity, promote sustainability, and create visually appealing landscapes.
+                  Expert selection of flora and fauna to enhance biodiversity,
+                  promote sustainability, and create visually appealing
+                  landscapes.
                 </p>
               </div>
             </div>
@@ -232,11 +238,11 @@ export const Landscaping = () => {
               <div className="design__text">
                 <h1>Hardscape Design</h1>
                 <p>
-                Integrating durable and aesthetically pleasing hardscape elements such as pathways, patios, and retaining walls to define and enhance outdoor spaces.
+                  Integrating durable and aesthetically pleasing hardscape
+                  elements such as pathways, patios, and retaining walls to
+                  define and enhance outdoor spaces.
                 </p>
               </div>
-
-              
             </div>
             <div className="design__below__image__text">
               <p>
@@ -259,13 +265,12 @@ export const Landscaping = () => {
               <div className="design__text">
                 <h1>Water Features</h1>
                 <p>
-                Designing and integrating water features such as ponds, fountains, and waterfalls to add tranquility and visual interest to outdoor environments.
+                  Designing and integrating water features such as ponds,
+                  fountains, and waterfalls to add tranquility and visual
+                  interest to outdoor environments.
                 </p>
               </div>
-
-              
             </div>
-            
           </div>
         </div>
       </section>
@@ -300,13 +305,7 @@ export const Landscaping = () => {
           </div>
         </div>
       </section>
-      
 
-      
-
-  
-
-      
       <Footer />
     </>
   );

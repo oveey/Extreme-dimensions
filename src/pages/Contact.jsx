@@ -15,12 +15,10 @@ export const Contact = () => {
             data-aos-duration="3000"
           >
             <h1 className="about__header__text  contact__header">
-              Contact us Today for your next project
+              Contact us 
             </h1>
             <p>
-              Call or submit our online form to request an estimate or for
-              general questions about U.S. Certified Contractors and our
-              services. We look forward to serving you!
+            Contact us Today for your next project !!
             </p>
           </div>
         </div>

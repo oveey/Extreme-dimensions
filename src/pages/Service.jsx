@@ -20,10 +20,9 @@ export const Service = () => {
       </section>
       <section className="text__under__section">
         <div className="text__under__con">
-          <p className="text__under">
-            <Typewriter
+          <p className="text__under" data-aos="fade-up">
+            {/* <Typewriter
               words={[
-                "We offer a comprehensive range of architectural and design services tailored to meet the diverse needs of our clients. Our integrated approach combines creativity, technical expertise, and client collaboration to deliver innovative and sustainable solutions..",
               ]}
               loop={1}
               cursor
@@ -31,7 +30,11 @@ export const Service = () => {
               typeSpeed={20}
               deleteSpeed={10}
               delaySpeed={1000}
-            />
+            /> */}
+            We offer a comprehensive range of architectural and design services
+            tailored to meet the diverse needs of our clients. Our integrated
+            approach combines creativity, technical expertise, and client
+            collaboration to deliver innovative and sustainable solutions..
           </p>
         </div>
       </section>
@@ -141,7 +144,7 @@ export const Service = () => {
                 deliver reliable engineering solutions that meet the highest
                 industry standards.
               </p>
-              <a href="/engineering" className="btn__link">
+              <a href="/remodeling" className="btn__link">
                 <div className="btn service__btn">
                   <p>Learn more on engineering </p>
                   <p>
@@ -316,7 +319,7 @@ export const Service = () => {
                 facilities, we focus on delivering innovative solutions that
                 exceed client expectations..
               </p>
-              <a href="/remodeling" className="btn__link">
+              <a href="/engineering" className="btn__link">
                 <div className="btn service__btn">
                   <p>Learn more on remodeling </p>
                   <p>
@@ -344,7 +347,7 @@ export const Service = () => {
           >
             <div className="service__box__content">
               <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721684440/2_1_kffcl9.png"
                 alt=""
               />
               <div className="content">
@@ -358,7 +361,7 @@ export const Service = () => {
             </div>
             <div className="service__box__content">
               <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721684448/3_1_iqkegc.png"
                 alt=""
               />
               <div className="content">
@@ -372,7 +375,7 @@ export const Service = () => {
             </div>
             <div className="service__box__content">
               <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720459717/image_1_c5imb8.png"
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721684457/4_1_icntv7.png"
                 alt=""
               />
               <div className="content">

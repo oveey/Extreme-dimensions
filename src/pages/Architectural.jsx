@@ -147,11 +147,10 @@ export const Architectural = () => {
       </section>
       <section className="text__under__section">
         <div className="text__under__con">
-          <p className="text__under">
-            {!doneTyping && (
+          <p className="text__under" data-aos="fade-up">
+            {/* {!doneTyping && (
               <Typewriter
                 words={[
-                  "We specialize in crafting bespoke architectural designs that seamlessly blend creativity, functionality, and aesthetic appeal. With a deep understanding of architectural principles and a commitment to excellence, we transform spaces into exceptional environments that inspire and endure.",
                 ]}
                 loop={1} // No looping
                 cursor
@@ -161,7 +160,12 @@ export const Architectural = () => {
                 delaySpeed={1000}
                 onLoopDone={handleDone} // Callback when typing is done
               />
-            )}
+            )} */}
+            We specialize in crafting bespoke architectural designs that
+            seamlessly blend creativity, functionality, and aesthetic appeal.
+            With a deep understanding of architectural principles and a
+            commitment to excellence, we transform spaces into exceptional
+            environments that inspire and endure.",
           </p>
         </div>
       </section>
@@ -283,7 +287,7 @@ export const Architectural = () => {
               institutional settings, we focus on:
             </p>
             <img
-              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png"
+              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721675155/interior1_1_wbjm4n.png"
               alt=""
             />
           </div>
@@ -383,7 +387,7 @@ export const Architectural = () => {
               buildings and landscapes. Key services include:
             </p>
             <img
-              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png"
+              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278168/picture_3_ykcxht.png"
               alt=""
             />
           </div>
@@ -485,7 +489,7 @@ export const Architectural = () => {
               Our 3D rendering services include:
             </p>
             <img
-              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720351364/Team_zbx8gm.png"
+              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721674694/arch1_bg3gqx.png"
               alt=""
             />
           </div>
@@ -681,7 +685,7 @@ export const Architectural = () => {
         </div>
       </section> */}
 
-      <section className="modal__section" >
+      <section className="modal__section">
         <h1 className="modal__section__heading" data-aos="fade-up">
           See Our Completed Project On Architectural Designs
         </h1>

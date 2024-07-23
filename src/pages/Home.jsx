@@ -74,10 +74,9 @@ export const Home = () => {
         <div className="header__inner__con">
           <Nav />
           <div className="header__text__con">
-            <h1 className="header__text">
-              <Typewriter
+            <h1 className="header__text"data-aos="fade-up" >
+              {/* <Typewriter
                 words={[
-                  "Redefining Luxury Living Through Architectural Brilliance",
                 ]}
                 loop={false}
                 cursor
@@ -85,7 +84,9 @@ export const Home = () => {
                 typeSpeed={70}
                 deleteSpeed={50}
                 delaySpeed={1000}
-              />
+              /> */}
+              Redefining Luxury Living Through Architectural Brilliance
+
             </h1>
           </div>
 
@@ -246,7 +247,7 @@ export const Home = () => {
           <div className="engineering__con landscaping">
             <div className="engineering__img" data-aos="fade-up">
               <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278172/picture_5_x9qxor.png"
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721659377/Architecture_gsyxvw.png"
                 alt=""
               />
             </div>
@@ -318,7 +319,7 @@ export const Home = () => {
                   <p>3D Rendering </p>
                 </div>
               </div>
-              <a href="Engineering" className="btn__link learn">
+              <a href="Architectural" className="btn__link learn">
                 <div className="btn who_link">
                   <p>Learn more </p>
                   <p>
@@ -446,7 +447,7 @@ export const Home = () => {
         <div className="engineering__con">
           <div className="engineering__img" data-aos="fade-up">
             <img
-              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278172/picture_5_x9qxor.png"
+              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721659401/Engineering_u2k9sc.png"
               alt=""
             />
           </div>
@@ -722,18 +723,19 @@ export const Home = () => {
               data-aos-duration="3000"
             >
               <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278173/picture_6_eyx5tg.png"
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721669667/por_1_vjozfk.png"
                 alt=""
               />
             </div>
 
             <div className="double__Image" data-aos="fade-up">
+           
               <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278172/picture_8_ysqijx.png"
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721669476/port2_yivvaw.png"
                 alt=""
               />
-              <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720278169/picture_7_fiox2t.png"
+                 <img
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721669893/port_pzr8ki.png"
                 alt=""
               />
             </div>
