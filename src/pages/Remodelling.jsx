@@ -144,7 +144,7 @@ export const Remodelling = () => {
             Our engineering services is aimed at ensuring seamless construction
             processes and project success. With a focus on technical expertise,
             innovation, and client collaboration, we deliver reliable
-            engineering solutions that meet the highest industry standards...",
+            engineering solutions that meet the highest industry standards...,
           </p>
         </div>
       </section>
@@ -459,7 +459,7 @@ export const Remodelling = () => {
 
       <section className="modal__section">
         <h1 className="modal__section__heading" data-aos="fade-up">
-          See Our Completed Project On Remodeling & Renovation Designs
+          See Our Completed Project On Engineering Construction
         </h1>
         <div className="carousel__modal">
           <div className="app">

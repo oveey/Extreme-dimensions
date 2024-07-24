@@ -457,7 +457,7 @@ export const Engineering = () => {
 
       <section className="modal__section">
         <h1 className="modal__section__heading" data-aos="fade-up">
-          See Our Completed Project On Engineering Construction
+          See Our Completed Project On Remodeling & Renovation
         </h1>
         <div className="carousel__modal">
           <div className="app">

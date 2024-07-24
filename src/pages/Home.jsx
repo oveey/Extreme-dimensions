@@ -8,6 +8,8 @@ import { Typewriter } from "react-simple-typewriter";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import CountUp from "react-countup";
+import emailjs from "@emailjs/browser";
+
 
 export const Home = () => {
   const [CounterOn, setCounterOn] = useState(false); // Initialize state
@@ -68,13 +70,34 @@ export const Home = () => {
     });
   }, []);
 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_rue705e", "template_f6obubi", form.current, {
+        publicKey: "3aqOKs-aknVY0-1-8",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+
+      e.target.reset()
+  };
+
   return (
     <>
       <section className="header__section">
         <div className="header__inner__con">
           <Nav />
           <div className="header__text__con">
-            <h1 className="header__text"data-aos="fade-up" >
+            <h1 className="header__text" data-aos="fade-up">
               {/* <Typewriter
                 words={[
                 ]}
@@ -86,7 +109,6 @@ export const Home = () => {
                 delaySpeed={1000}
               /> */}
               Redefining Luxury Living Through Architectural Brilliance
-
             </h1>
           </div>
 
@@ -159,7 +181,11 @@ export const Home = () => {
       <div className="video__section" data-aos="zoom-in-up">
         <div className="video__con">
           <div className="inner__video__con">
-            <video controls width="100%" poster="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721564673/video_tdjzbk.png">
+            <video
+              controls
+              width="100%"
+              poster="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721564673/video_tdjzbk.png"
+            >
               <source src="your-video-link.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -223,13 +249,19 @@ export const Home = () => {
         <div className="projects__con">
           <div className="project__info">
             <h1 className="project__big_t">
-              <CountUp start={0} end={1995} duration={12} separator=""  />
+              <CountUp start={0} end={1995} duration={12} separator="" />
             </h1>
             <p>YEARS OF ESTABLISHMENT</p>
           </div>
           <div className="project__info">
             <h1 className="project__big_t">
-              <CountUp start={0} end={5000} duration={12} separator="" suffix="+"  />
+              <CountUp
+                start={0}
+                end={5000}
+                duration={12}
+                separator=""
+                suffix="+"
+              />
             </h1>
             <p>PROJECTS & COUNTING</p>
           </div>
@@ -729,12 +761,11 @@ export const Home = () => {
             </div>
 
             <div className="double__Image" data-aos="fade-up">
-           
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721669476/port2_yivvaw.png"
                 alt=""
               />
-                 <img
+              <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1721746846/port21_nhbtgm.png"
                 alt=""
               />
@@ -756,7 +787,7 @@ export const Home = () => {
                 </button>
               </div>
 
-              <form onSubmit={handleSubmit} className="consultation__form">
+              <form ref={form} onSubmit={sendEmail} className="consultation__form">
                 <div className="Popup__main">
                   <div className="pop__input__con">
                     <div className="name__form">
@@ -771,8 +802,8 @@ export const Home = () => {
                   <div className="pop__input__con">
                     <div className="name__form">
                       <label htmlFor="num">Phone number</label> <br />
-                      <input type="number" name="" id="num" />
-                    </div>
+                      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" />
+                      </div>
                     <div className="name__form">
                       <label htmlFor="add">Address</label> <br />
                       <input type="address" name="" id="add" />
@@ -780,19 +811,32 @@ export const Home = () => {
                   </div>
                   <div className="pop__input__con">
                     <div className="name__form">
-                      <label htmlFor="num">Date and time</label> <br />
-                      <input type="number" name="" id="num" />
+                      <label htmlFor="datetime">Date and Time</label> <br />
+                      <input type="datetime-local" id="datetime" name="datetime" />
                     </div>
+
                     <div className="name__form">
                       <label htmlFor="add">Type of consultation</label> <br />
-                      <input type="address" name="" id="add" />
+                      <select id="consultation-type"name="consultation-type"className="form-select">
+                        <option value="">Select type</option>
+                        <option value="architecture">Architecture</option>
+                        <option value="interior-design">Interior Design</option>
+                        <option value="landscape-design">Landscape Design</option>
+                        <option value="project-management"> Project Management</option>
+                        <option value="other">Other</option>
+                      </select>{" "}
                     </div>
                   </div>
-                  <div className="pop__input__con__single">
-                    <label htmlFor="">Upload document</label>
-                    <br />
-                    <input type="text" />
+
+                  <div className="pop__input__con">
+                    <div className="name__form">
+                      <label htmlFor="num">Upload document (optional)</label> <br />
+                      <input type="file"id="document-upload"name="document" accept=".pdf,.doc,.docx,.txt"/>
+                    </div>
+                  
                   </div>
+                  
+                
                 </div>
                 <div className="pop__message__con">
                   <div className="pop__text__area__con">

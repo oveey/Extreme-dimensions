@@ -99,7 +99,7 @@
   align-items: flex-start;
   }
   .footer__links {
-    align-items: flex-start;
+   align-items: flex-start;
    flex-direction: column;
    margin-bottom: 30px;
    gap: 30px;

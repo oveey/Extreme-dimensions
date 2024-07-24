@@ -143,7 +143,7 @@ export const Landscaping = () => {
             /> */}
           At Xtreme Dimensions, we specialize in creating captivating outdoor
           spaces that enhance the aesthetic appeal, functionality, and
-          sustainability of environments. Our landscaping services."
+          sustainability of environments. Our landscaping services.
         </p>
       </section>
 

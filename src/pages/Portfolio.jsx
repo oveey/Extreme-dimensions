@@ -74,7 +74,7 @@ export const Portfolio = () => {
             From luxurious residential villas to cutting-edge commercial
             complexes, each project reflects our passion for design excellence
             and our dedication to surpassing client expectations.Explore our
-            portfolio to see how we have transformed visions into reality.",
+            portfolio to see how we have transformed visions into reality.,
           </p>
         </div>
       </section>

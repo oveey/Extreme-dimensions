@@ -12,7 +12,6 @@
   position: sticky;
   cursor: pointer;
   top: 0;
-  font-family: "Kufam";
   width: 100%;
 }
 
@@ -58,13 +57,11 @@
     align-items: center;
     flex-shrink: 0;
     margin: 0 auto;
-    font-family: "Kufam";
     margin-bottom: 50px;
   }
   .nav__list {
     display: flex;
     gap: 40px;
-    font-family: "Kufam";
     font-size: 15px;
     font-weight: 500;
   }
@@ -78,12 +75,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     position: sticky;
     cursor: pointer;
     top: 0;
     z-index: 10000;
-    font-family: "Kufam";
   }
 
   .home__nav a {
@@ -153,11 +148,9 @@
 
   .open {
     display: flex !important;
-
     pointer-events: unset !important;
     opacity: 1 !important;
     font-size: 10px;
-    font-family: "kufam";
   }
   .home__nav button span:nth-child(1) {
     margin-bottom: 5px;
@@ -220,7 +213,6 @@
   .nav__list {
     display: flex;
     gap: 40px;
-    font-family: "Kufam";
     font-size: 15px;
     font-weight: 500;
   }
@@ -265,7 +257,6 @@
 
   .nav_link {
     color: #fff;
-    font-style: "Kufam";
     font-size: 40px;
     font-weight: 300;
   }

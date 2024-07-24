@@ -10,7 +10,6 @@
 
 .service__text__con h1 {
   color: var(--pic-bg, #2e4a77);
-  font-family: Kufam;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -27,7 +26,6 @@
 }
 .service__text__tb p {
   color: var(--pic-bg, #2e4a77);
-  font-family: Kufam;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -55,7 +53,6 @@
   color: var(--Gulf-Blue-950, #001a52);
 
   /* Display xs Semibold */
-  font-family: Kufam;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -64,7 +61,6 @@
 }
 .content p {
   color: var(--Cod-Gray-600, #5d5d5d);
-  font-family: Kufam;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -85,7 +81,6 @@
     flex-direction: column;
   }
   .service__text__con h1 {
-    font-family: Kufam;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;

@@ -449,6 +449,20 @@ video {
   padding: 10px;
   margin-bottom: 30px;
 }
+.name__form select {
+  background-color: #d2d2d2;
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+
+
+
 textarea {
   padding: 10px ;
 }
@@ -464,6 +478,7 @@ textarea {
 .pop__message__con textarea {
   width: 100%;
   background-color: #d2d2d2;
+  height: 40vh;
   border: none;
   outline: none;
   border-radius: 10px;
@@ -517,9 +532,15 @@ textarea {
   border: none;
   outline: none;
   border-radius: 100%;
-  background-color: inherit;
-  font-size: 30px;
+  background-color: #d2d2d2;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
   cursor: pointer;
+}
+.close__btn:hover{
+  background-color: inherit;
+  
 }
 
 @media (max-width: 999px) {
@@ -609,6 +630,8 @@ textarea {
   .consultation__form {
     display: flex;
     padding: 0;
+    gap: 0;
+
   }
 
   .popup__header {
@@ -803,6 +826,9 @@ textarea {
   .service__image {
     margin-bottom: 20px;
   }
+
+ 
+  
 }
 
 @media (max-width: 480px) {

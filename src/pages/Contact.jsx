@@ -1,9 +1,73 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Nav } from "../component/Nav";
 import "../styles/contact.css";
 import { Footer } from "../component/Footer";
+import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
+  // const form = useRef();
+
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs
+  //     .sendForm("service_rue705e", "template_f6obubi", form.current, {
+  //       publicKey: "3aqOKs-aknVY0-1-8",
+  //     })
+  //     .then(
+  //       () => {
+  //         console.log("SUCCESS!");
+  //       },
+  //       (error) => {
+  //         console.log("FAILED...", error.text);
+  //       }
+  //     );
+
+  //   e.target.reset();
+
+  //   const templateParams = {
+  //     from_name: name,
+  //     from_email: email,
+  //     to_name:'ovie',
+  //     message: message,
+
+  //   };
+  // };
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Your EmailJS service ID, template ID, and Public Key
+    const serviceId = 'service_rue705e';
+    const templateId = 'template_f6obubi';
+    const publicKey = '3aqOKs-aknVY0-1-8';
+
+    // Create a new object that contains dynamic template params
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: 'Web Wizard',
+      message: message,
+    };
+
+    // Send the email using EmailJS
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log('Email sent successfully!', response);
+        setName('');
+        setEmail('');
+        setMessage('');
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+      });
+  }
+
+
   return (
     <>
       <section className="about__header__section">
@@ -14,12 +78,8 @@ export const Contact = () => {
             data-aos="fade-up"
             data-aos-duration="3000"
           >
-            <h1 className="about__header__text  contact__header">
-              Contact us 
-            </h1>
-            <p>
-            Contact us Today for your next project !!
-            </p>
+            <h1 className="about__header__text  contact__header">Contact us</h1>
+            <p>Contact us Today for your next project !!</p>
           </div>
         </div>
       </section>
@@ -31,7 +91,7 @@ export const Contact = () => {
           data-aos-duration="3000"
         >
           <div className="form__main">
-            <form action="">
+            <form ref={form} onSubmit={sendEmail}>
               <div className="input__con">
                 <div className="name__form">
                   <label htmlFor="fname">First-name</label> <br />
@@ -56,7 +116,7 @@ export const Contact = () => {
                 <label htmlFor="message">Message</label> <br />
                 <textarea name="" id="message" cols="300" rows="18"></textarea>
               </div>
-              <button className="form__btn">
+              <button type="submit" className="form__btn">
                 <p>Send Message</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
