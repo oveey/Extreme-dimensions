@@ -165,7 +165,7 @@ export const Architectural = () => {
             seamlessly blend creativity, functionality, and aesthetic appeal.
             With a deep understanding of architectural principles and a
             commitment to excellence, we transform spaces into exceptional
-            environments that inspire and endure..,
+            environments that inspire and endure..
           </p>
         </div>
       </section>

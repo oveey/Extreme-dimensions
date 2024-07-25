@@ -347,9 +347,9 @@ h1 span {
   .inside__image__text p {
     font-size: 16px;
   }
-  .app {
-    /* justify-content: center; */
-  }
+  /* .app {
+    justify-content: center; 
+  } */
   .heading__con {
     gap: 15px;
   }

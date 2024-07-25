@@ -37,7 +37,8 @@
   gap: 100px;
 }
 .form__container form {
-  width: 100%;
+ width: 40vw; 
+  
 }
 
 .form__container form input {
@@ -135,10 +136,19 @@
     width: 100%;
     max-width: 600px;
   }
+  .form__container form {
+    width: 100%; 
+     
+  }
 }
 
 @media (max-width: 480px) {
   .contact__header__text__con {
     width: 100%;
+  }
+
+  .form__container form {
+    width: 100%; 
+     
   }
 }

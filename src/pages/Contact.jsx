@@ -1,72 +1,55 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import { Nav } from "../component/Nav";
 import "../styles/contact.css";
 import { Footer } from "../component/Footer";
-import emailjs from "@emailjs/browser";
+import axios from "axios";
 
 export const Contact = () => {
-  // const form = useRef();
-
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs
-  //     .sendForm("service_rue705e", "template_f6obubi", form.current, {
-  //       publicKey: "3aqOKs-aknVY0-1-8",
-  //     })
-  //     .then(
-  //       () => {
-  //         console.log("SUCCESS!");
-  //       },
-  //       (error) => {
-  //         console.log("FAILED...", error.text);
-  //       }
-  //     );
-
-  //   e.target.reset();
-
-  //   const templateParams = {
-  //     from_name: name,
-  //     from_email: email,
-  //     to_name:'ovie',
-  //     message: message,
-
-  //   };
-  // };
-
   const [name, setName] = useState('');
+  const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
+  const [address, setAddress] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Your EmailJS service ID, template ID, and Public Key
-    const serviceId = 'service_rue705e';
-    const templateId = 'template_f6obubi';
-    const publicKey = '3aqOKs-aknVY0-1-8';
+    const serviceId = "service_rue705e";
+    const templateId = "template_f6obubi";
+    const publicKey = "3aqOKs-aknVY0-1-8";
 
-    // Create a new object that contains dynamic template params
-    const templateParams = {
-      from_name: name,
-      from_email: email,
-      to_name: 'Web Wizard',
-      message: message,
+    // Create an object with EmailJS service ID, template ID, Public Key, and Template params
+    const data = {
+      service_id: serviceId,
+      template_id: templateId,
+      user_id: publicKey,
+      template_params: {
+        from_name: name,
+        from_email: email,
+        to_name: "ovgraphic1@gmail.com",
+        message: message,
+      },
     };
 
     // Send the email using EmailJS
-    emailjs.send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        console.log('Email sent successfully!', response);
-        setName('');
-        setEmail('');
-        setMessage('');
-      })
-      .catch((error) => {
-        console.error('Error sending email:', error);
-      });
-  }
-
+    try {
+      const res = await axios.post(
+        "https://api.emailjs.com/api/v1.0/email/send",
+        data
+      );
+      console.log(res.data);
+      setName("");
+      setLastName("");
+      setEmail("");
+      setAddress("");
+      setPhoneNumber("");
+      setMessage("");
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   return (
     <>
@@ -91,30 +74,56 @@ export const Contact = () => {
           data-aos-duration="3000"
         >
           <div className="form__main">
-            <form ref={form} onSubmit={sendEmail}>
+            <form onSubmit={handleSubmit}>
               <div className="input__con">
                 <div className="name__form">
                   <label htmlFor="fname">First-name</label> <br />
-                  <input type="text" name="" id="fname" />
+                  <input
+                    type="text"
+                    id="fname"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
                 </div>
                 <div className="name__form">
                   <label htmlFor="lname">Last-name</label> <br />
-                  <input type="text" name="" id="lname" />
+                  <input
+                    type="text"
+                    id="lname"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                  />
                 </div>
               </div>
               <div className="input__con">
                 <div className="name__form">
                   <label htmlFor="num">Phone number</label> <br />
-                  <input type="number" name="" id="num" />
+                  <input
+                    type="text"
+                    id="num"
+                    value={phoneNumber}
+                    onChange={(e) => setPhoneNumber(e.target.value)}
+                  />
                 </div>
                 <div className="name__form">
                   <label htmlFor="add">Address</label> <br />
-                  <input type="address" name="" id="add" />
+                  <input
+                    type="text"
+                    id="add"
+                    value={address}
+                    onChange={(e) => setAddress(e.target.value)}
+                  />
                 </div>
               </div>
               <div className="text__area__con">
                 <label htmlFor="message">Message</label> <br />
-                <textarea name="" id="message" cols="300" rows="18"></textarea>
+                <textarea
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                ></textarea>
               </div>
               <button type="submit" className="form__btn">
                 <p>Send Message</p>
@@ -130,6 +139,7 @@ export const Contact = () => {
               </button>
             </form>
           </div>
+
           <div className="social__info__con">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.422084537781!2d7.930685574603667!3d5.03510003866872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105d57be8c2100ed%3A0xf591310c584c7b3c!2sPaul%20Bassey%20St%2C%20Uyo%20520103%2C%20Akwa%20Ibom!5e0!3m2!1sen!2sng!4v1721089920342!5m2!1sen!2sng"

@@ -8,15 +8,73 @@ import { Typewriter } from "react-simple-typewriter";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import CountUp from "react-countup";
-import emailjs from "@emailjs/browser";
-
+import axios from "axios";
 
 export const Home = () => {
-  const [CounterOn, setCounterOn] = useState(false); // Initialize state
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+
+  const [CounterOn, setCounterOn] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [address, setAddress] = useState("");
+  const [datetime, setDatetime] = useState("");
+  const [consultationType, setConsultationType] = useState("");
+  const [document, setDocument] = useState(null);
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const serviceId = "service_rue705e";
+    const templateId = "template_f6obubi";
+    const publicKey = "3aqOKs-aknVY0-1-8";
+
+    const formData = new FormData();
+    formData.append("service_id", serviceId);
+    formData.append("template_id", templateId);
+    formData.append("user_id", publicKey);
+    formData.append("template_params[from_name]", `${firstName} ${lastName}`);
+    formData.append("template_params[to_name]", "ovgraphic1@gmail.com");
+    formData.append("template_params[phone_number]", phoneNumber);
+    formData.append("template_params[address]", address);
+    formData.append("template_params[datetime]", datetime);
+    formData.append("template_params[consultation_type]", consultationType);
+    formData.append("template_params[message]", message);
+
+    if (document) {
+      formData.append("template_params[document]", document);
+    }
+
+    try {
+      const res = await axios.post(
+        "https://api.emailjs.com/api/v1.0/email/send-form",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+      console.log(res.data);
+      setFirstName("");
+      setLastName("");
+      setPhoneNumber("");
+      setAddress("");
+      setDatetime("");
+      setConsultationType("");
+      setDocument(null);
+      setMessage("");
+    } catch (error) {
+      console.error(error);
+    }
+
+    closePopup();
+  };
+
+  const handleFileChange = (e) => {
+    setDocument(e.target.files[0]);
+  };
 
   const openPopup = () => {
     setShowPopup(true);
@@ -24,16 +82,6 @@ export const Home = () => {
 
   const closePopup = () => {
     setShowPopup(false);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission logic here, e.g., send data to server or perform client-side validation
-    console.log("Form submitted with:", { name, email, message });
-    // You can add further logic for handling form submission, like sending data to an API
-
-    // Close the popup after submission
-    closePopup();
   };
 
   const formRef = useRef(null);
@@ -46,7 +94,7 @@ export const Home = () => {
       const handleFocus = (event) => {
         setTimeout(() => {
           event.target.scrollIntoView({ behavior: "smooth", block: "center" });
-        }, 300); // Adjust timeout as needed
+        }, 300);
       };
 
       inputs.forEach((input) => {
@@ -69,27 +117,6 @@ export const Home = () => {
       offset: 120, // Adjust this value as needed
     });
   }, []);
-
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm("service_rue705e", "template_f6obubi", form.current, {
-        publicKey: "3aqOKs-aknVY0-1-8",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
-
-      e.target.reset()
-  };
 
   return (
     <>
@@ -787,42 +814,79 @@ export const Home = () => {
                 </button>
               </div>
 
-              <form ref={form} onSubmit={sendEmail} className="consultation__form">
+              <form onSubmit={handleSubmit} className="consultation__form" ref={formRef}>
                 <div className="Popup__main">
                   <div className="pop__input__con">
                     <div className="name__form">
                       <label htmlFor="fname">First-name</label> <br />
-                      <input type="text" name="" id="fname" />
+                      <input
+                        type="text"
+                        id="fname"
+                        value={firstName}
+                        onChange={(e) => setFirstName(e.target.value)}
+                      />
                     </div>
                     <div className="name__form">
                       <label htmlFor="lname">Last-name</label> <br />
-                      <input type="text" name="" id="lname" />
+                      <input
+                        type="text"
+                        id="lname"
+                        value={lastName}
+                        onChange={(e) => setLastName(e.target.value)}
+                      />
                     </div>
                   </div>
                   <div className="pop__input__con">
                     <div className="name__form">
                       <label htmlFor="num">Phone number</label> <br />
-                      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" />
-                      </div>
+                      <input
+                        type="text"
+                        id="num"
+                        value={phoneNumber}
+                        onChange={(e) => setPhoneNumber(e.target.value)}
+                      />
+                    </div>
                     <div className="name__form">
                       <label htmlFor="add">Address</label> <br />
-                      <input type="address" name="" id="add" />
+                      <input
+                        type="text"
+                        id="add"
+                        value={address}
+                        onChange={(e) => setAddress(e.target.value)}
+                      />
                     </div>
                   </div>
                   <div className="pop__input__con">
                     <div className="name__form">
                       <label htmlFor="datetime">Date and Time</label> <br />
-                      <input type="datetime-local" id="datetime" name="datetime" />
+                      <input
+                        type="datetime-local"
+                        id="datetime"
+                        name="datetime"
+                        value={datetime}
+                        onChange={(e) => setDatetime(e.target.value)}
+                      />
                     </div>
 
                     <div className="name__form">
                       <label htmlFor="add">Type of consultation</label> <br />
-                      <select id="consultation-type"name="consultation-type"className="form-select">
+                      <select
+                        id="consultation-type"
+                        name="consultation-type"
+                        className="form-select"
+                        value={consultationType}
+                        onChange={(e) => setConsultationType(e.target.value)}
+                      >
                         <option value="">Select type</option>
                         <option value="architecture">Architecture</option>
                         <option value="interior-design">Interior Design</option>
-                        <option value="landscape-design">Landscape Design</option>
-                        <option value="project-management"> Project Management</option>
+                        <option value="landscape-design">
+                          Landscape Design
+                        </option>
+                        <option value="project-management">
+                          {" "}
+                          Project Management
+                        </option>
                         <option value="other">Other</option>
                       </select>{" "}
                     </div>
@@ -830,13 +894,17 @@ export const Home = () => {
 
                   <div className="pop__input__con">
                     <div className="name__form">
-                      <label htmlFor="num">Upload document (optional)</label> <br />
-                      <input type="file"id="document-upload"name="document" accept=".pdf,.doc,.docx,.txt"/>
+                      <label htmlFor="num">Upload document (optional)</label>{" "}
+                      <br />
+                      <input
+                        type="file"
+                        id="document-upload"
+                        name="document"
+                        accept=".pdf,.doc,.docx,.txt"
+                        onChange={handleFileChange}
+                      />
                     </div>
-                  
                   </div>
-                  
-                
                 </div>
                 <div className="pop__message__con">
                   <div className="pop__text__area__con">
@@ -846,6 +914,8 @@ export const Home = () => {
                       id="message"
                       cols="10"
                       rows="20"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                     ></textarea>
                   </div>
                   <button className="form__btn pop_btn">
