@@ -48,6 +48,7 @@ export const Nav = () => {
                     <li>
                         <NavLink to="/portfolio" className='nav_link'>Portfolio</NavLink>
                     </li>
+                    
                     <li>
                         <NavLink to="/gallery" className='nav_link'>Gallery</NavLink>
                     </li>
