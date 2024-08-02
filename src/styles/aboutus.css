@@ -3,8 +3,8 @@ section {
   margin-top: 30px;
 }
 
-.about__header__section {
-  padding: 0;
+.about__header__section { 
+  padding: 0;          
   margin: 0;
 }
 
@@ -17,6 +17,7 @@ section {
   padding: var(--custom-padding);
   padding-bottom: 0;
 }
+
 .about__header__text {
   color: var(--Cod-Gray-50, #f6f6f6);
 

@@ -1,5 +1,5 @@
 :root {
-  --custom-padding: 20px 30px;
+  --custom-padding: 20px 80px;
 }
 
 .header__section {
@@ -23,7 +23,7 @@
   letter-spacing: -1.44px;
 }
 .header__text__con {
-  height: 40vh; 
+  height: 40vh;
 }
 .btn__link {
   display: flex;
@@ -43,7 +43,8 @@
   gap: 10px;
   margin-top: 40px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .btn:hover {
   transform: scale(1.05); /* Slightly increase size */
@@ -68,6 +69,7 @@
 
 .consultation__con {
   padding: 10px 10px;
+
 }
 
 .consultation__text {
@@ -109,13 +111,11 @@ video {
   width: 100%;
   /* border-radius: 15px 15px; */
   background-color: #080808;
-  object-fit: contain; 
+  object-fit: contain;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-
-
 }
 
 .who__head__text {
@@ -143,7 +143,7 @@ video {
   width: 100%;
 }
 
-.who__section{
+.who__section {
   margin-top: 100px;
 }
 
@@ -460,11 +460,8 @@ video {
   margin-bottom: 30px;
 }
 
-
-
-
 textarea {
-  padding: 10px ;
+  padding: 10px;
 }
 .pop__message__con {
   width: 80%;
@@ -472,7 +469,6 @@ textarea {
 
 .Popup__main {
   width: 100%;
-  
 }
 
 .pop__message__con textarea {
@@ -515,8 +511,6 @@ textarea {
   margin-top: 10px;
   border-radius: 10px;
   overflow-x: hidden; /* Hide any potential overflow */
-
-
 }
 
 .popup__header {
@@ -538,17 +532,17 @@ textarea {
   font-size: 25px;
   cursor: pointer;
 }
-.close__btn:hover{
+.close__btn:hover {
   background-color: inherit;
-  
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1084px) {
   .header__mini__text {
     line-height: 26px;
-    transform: translateX(300px);
+    transform: translateX(400px);
     gap: 20px;
     width: 60%;
+    padding-top: 130px;
   }
   .projects__con {
     flex-direction: column;
@@ -578,9 +572,24 @@ textarea {
     font-size: 16px;
     padding: 0;
   }
+  .who__more__info{
+    flex-direction: column;
+  }
+  .header__text__con{
+    height: 30vh;
+  }
 
   .popup__header {
     padding: 30px 0;
+  }
+
+  .who__text__con{
+    padding-top: 0;
+    padding-right: 120px;
+  }
+  
+  .engineering__con h1{
+    font-size: 35px;
   }
 }
 
@@ -605,8 +614,6 @@ textarea {
     width: 50%;
   }
 
-  
-
   .popup__form__con {
     padding: 20px;
     margin-top: 900px;
@@ -626,12 +633,10 @@ textarea {
     flex-wrap: wrap;
   }
 
-
   .consultation__form {
     display: flex;
     padding: 0;
     gap: 0;
-
   }
 
   .popup__header {
@@ -646,7 +651,6 @@ textarea {
     font-size: 15px;
     /* padding: 10px 9px;
     gap: 7px; */
-
   }
 
   .header__mini__text {
@@ -805,37 +809,27 @@ textarea {
     transform: translateY(-100px);
   } */
 
-  .nav_link {
-    color: #fff;
-    font-style: "Kufam";
-    font-size: 30px;
-    font-weight: 300;
+  .header__text{
+    padding-right: 60px ;
   }
 
-  .home__nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    z-index: 1000;
-    overflow: hidden;
-    opacity: 0;
-    pointer-events: none;
-    position: fixed;
+  .header__text__con{
+    height: 20vh;
   }
   .service__image {
     margin-bottom: 20px;
   }
-
- 
-  
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
   .header__text {
     font-size: 38px;
     line-height: 53px; /* 165.625% */
     margin-top: 50px;
+  }
+
+  .header__mini__text{
+    padding-top: 150px;
   }
   .build__header h1 {
     color: var(--pic-bg, #2e4a77);
@@ -852,10 +846,12 @@ textarea {
   }
 
   .btn {
-    display: flex;
-    /* gap: 30px; */
     margin-top: 50px;
-    /* justify-content: flex-start; */
+    /* padding: 15px 20px; */
+  }
+
+  .btn p{
+    font-size: 13px;
   }
 
   .who_link {
@@ -926,3 +922,11 @@ textarea {
     font-size: 20px;
   }
 }
+
+@media (max-width: 380px) {
+  .header__mini__text{
+    padding-top: 200px;
+  }
+
+}
+

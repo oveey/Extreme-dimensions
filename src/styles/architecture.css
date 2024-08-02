@@ -260,7 +260,7 @@ h1 span {
   }
   .app {
     /* width: 100%; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
 
