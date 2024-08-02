@@ -172,7 +172,7 @@ export const Home = () => {
             </div>
             <div className="socials__icons">
               <a
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/XtremeDimensions.co?mibextid=LQQJ4d"
                 target="_blank"
                 rel="noopener noreferrer"
               >

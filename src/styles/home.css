@@ -536,10 +536,19 @@ textarea {
   background-color: inherit;
 }
 
-@media (max-width: 1084px) {
+@media (max-width: 1184px){
+  .header__mini__text {
+    transform: translateX(300px);
+    width: 70%;
+  }
+
+}
+  
+
+@media (max-width: 984px) {
   .header__mini__text {
     line-height: 26px;
-    transform: translateX(400px);
+    transform: translateX(300px);
     gap: 20px;
     width: 60%;
     padding-top: 130px;

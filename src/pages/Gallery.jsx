@@ -77,7 +77,7 @@ export const Gallery = () => {
             className={`heading__btn ${activeButton === "all" ? "active" : ""}`}
             onClick={() => handleClick("all")}
           >
-            All
+            Interior
           </button>
           <button
             className={`heading__btn ${
@@ -85,7 +85,7 @@ export const Gallery = () => {
             }`}
             onClick={() => handleClick("landscaping")}
           >
-            landscaping
+            Exterior
           </button>
           <button
             className={`heading__btn ${
@@ -93,7 +93,7 @@ export const Gallery = () => {
             }`}
             onClick={() => handleClick("remodel")}
           >
-            Remodeling
+            Foundation
           </button>
           <button
             className={`heading__btn ${
@@ -101,7 +101,7 @@ export const Gallery = () => {
             }`}
             onClick={() => handleClick("engineering")}
           >
-            engineering
+            Security
           </button>
           <button
             className={`heading__btn ${
@@ -109,7 +109,7 @@ export const Gallery = () => {
             }`}
             onClick={() => handleClick("architectural")}
           >
-            architectural
+            3D Rendering{" "}
           </button>
         </div>
         <div className="carousel__modal">
