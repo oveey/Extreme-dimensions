@@ -27,9 +27,12 @@ export const Contact = () => {
       user_id: publicKey,
       template_params: {
         from_name: name,
+        from_lastName: lastName,
         from_email: email,
-        to_name: "ovgraphic1@gmail.com",
+        from_address: address,
+        from_phoneNumber: email,
         message: message,
+        to_name: "ovgraphic1@gmail.com",
       },
     };
 
